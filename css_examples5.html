@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>CSS Examples 5</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+
+	  h4 {
+		  color: red;
+		  }
+
+	  .p1 {
+		  color: blue;
+		  }
+
+	.div1 {
+		height: 200px;
+		width: 150px;
+		border: 1px solid navy;
+		padding: 10px;
+		text-align: justify;
+		}
+
+	a {
+		text-decoration: none;
+		}
+
+	p.underline {
+		text-decoration: underline;
+		}
+
+	p.overline {
+		text-decoration: overline;
+		}
+
+	p.linethrough {
+		text-decoration: line-through;
+		}
+
+	p.uppercase {
+		text-transform: uppercase;
+		}
+
+	p.lowercase {
+		text-transform: lowercase;
+		}
+
+	p.capitalize {
+		text-transform: capitalize;
+		}
+
+	p.indent {
+		text-indent: 50px;
+		}
+
+	p.spacing {
+		letter-spacing: 3px;
+		}
+
+	p.negspacing {
+		letter-spacing: -3px;
+		}
+
+	p.smheight {
+		width: 50%;
+		line-height: 0.5;
+		}
+
+	p.bigheight {
+		width: 50%;
+		line-height: 1.5;
+		}
+
+	p.lr {
+		direction: ltr;
+		}
+
+	p.rl {
+		direction: rtl;
+		}
+
+	p.lgwspacing {
+		word-spacing: 15px;
+		}
+
+	p.smwspacing {
+		word-spacing: -5px;
+		}
+
+	p.nowrap {
+		white-space: nowrap;
+		}
+
+	img#top {
+		vertical-align: text-top;
+		}
+
+	img#bottom {
+		vertical-align: text-bottom;
+		}
+
+
+	  </style>
+
+	</head>
+
+	<body>
+	<h1>CSS Text</h1>
+
+	<h3>Set Text Color</h3>
+
+	<h4>This is a heading</h4>
+
+	<p class="p1">This is a paragraph. This is a paragraph. This is a paragraph.</p>
+
+	<hr>
+
+	<h3>The text-align Property</h3>
+
+	<div class="div1">This is a div with justified text. This is a paragraph with justified text. This is a paragraph with justified text.</div>
+
+	<hr>
+
+	<h3>Remove Text Decoration</h3>
+
+	<p> This is a <a href="#">link</a> with no underline...</p>
+
+	<hr>
+
+	<h3>The text-decoration Property</h3>
+
+	<p class="underline">Underlined</p>
+	<p class="overline">Overlined</p>
+	<p class="linethrough">Line Through</p>
+
+	<hr>
+
+	<h3>The text-transform Property</h3>
+
+	<p class="uppercase">Uppercase</p>
+	<p class="lowercase">Lowercase</p>
+	<p class="capitalize">Capitalized</p>
+
+	<hr>
+
+	<h3>The text-indent Property</h3>
+
+	<p class="indent">This is an indented paragraph. This is an indented paragraph. This is an indented paragraph. This is an indented paragraph. This is an indented paragraph.</p>
+
+	<hr>
+
+	<h3>The letter-spacing Property</h3>
+
+	<p class="spacing">This paragraph has letter (character) spacing of 3px.This paragraph has letter (character) spacing of 3px.This paragraph has letter (character) spacing of 3px.</p>
+
+	<hr style="width: 50%;">
+
+	<p>The following paragraph has negative spacing of -3px:</p>
+	<p class="negspacing">This paragraph has letter (character) spacing of -3px.This paragraph has letter (character) spacing of -3px.This paragraph has letter (character) spacing of -3px.</p>
+
+	<hr>
+
+	<h3>The line-height Property</h3>
+
+	<p class="smheight">This paragraph has SMALLER line height.This paragraph has SMALLER line height.This paragraph has SMALLER line height.</p>
+
+	<hr style="width: 50%;">
+
+	<p class="bigheight">This paragraph has BIGGER line height.This paragraph has BIGGER line height.This paragraph has BIGGER line height.</p>
+
+	<hr>
+
+	<h3>The direction Property</h3>
+
+	<p class="lr">This is the default text direction.</p>
+
+	<p class="rl">This is a right-to-left text direction.</p>
+
+	<hr>
+
+	<h3>The word-spacing Property</h3>
+
+	<p class="lgwspacing">This paragraph has a larger word spacing.This paragraph has a larger word spacing.This paragraph has a larger word spacing.This paragraph has a larger word spacing.This paragraph has a larger word spacing.</p>
+
+	<hr style="width: 50%;">
+
+	<p class="smwspacing">This paragraph has a smaller word spacing.This paragraph has a smaller word spacing.This paragraph has a smaller word spacing.This paragraph has a smaller word spacing.This paragraph has a smaller word spacing.</p>
+
+	<hr>
+
+	<h3>The white-space Property</h3>
+
+	<p class="nowrap">This paragraph has <b>no-wrap</b> enabled.
+	This paragraph has <b>no-wrap</b> enabled.
+	This paragraph has <b>no-wrap</b> enabled.</p>
+
+	<hr>
+
+	<h3>The vertical-align Property</h3>
+
+	<p>The following example shows the difference between the  <b>vertical alignment of an image inside text:</b></p>
+
+	<p>An image <img src="Images/bluestar.png" alt="bluestar" height="50px" width="50px"> with <b>default alignment</b>.An image with <b>default alignment</b>.An image with <b>default alignment</b>.</p>
+
+	<hr style="width: 50%;">
+
+	<p>An image <img id="top" src="Images/bluestar.png" alt="bluestar" height="50px" width="50px"> with <b>text-top alignment</b>.An image with <b>text-top alignment</b>.An image with <b>text-top alignment</b>.</p>
+
+	<hr style="width: 50%;">
+
+	<p>An image <img id="bottom" src="Images/bluestar.png" alt="bluestar" height="50px" width="50px"> with <b>text-bottom alignment</b>.An image with <b>text-bottom alignment</b>.An image with <b>text-bottom alignment</b>.</p>
+
+		<hr>
+
+		<ul class="main_pagination">
+			  <li><a href="css_examples4.html">«</a></li>
+			  <li><a href="css_examples1.html">1</a></li>
+			  <li><a href="css_examples2.html">2</a></li>
+			  <li><a href="css_examples3.html">3</a></li>
+			  <li><a href="css_examples4.html">4</a></li>
+			  <li><a href="#" class="active">5</a></li>
+			  <li><a href="css_examples6.html">6</a></li>
+			  <li><a href="css_examples7.html">7</a></li>
+			  <li><a href="css_examples8.html">8</a></li>
+			  <li><a href="css_examples9.html">9</a></li>
+			  <li><a href="css_examples10.html">10</a></li>
+			  <li><a href="css_examples11.html">11</a></li>
+			  <li><a href="css_examples12.html">12</a></li>
+			  <li><a href="css_examples13.html">13</a></li>
+			  <li><a href="css_examples14.html">14</a></li>
+			  <li><a href="css_examples15.html">15</a></li>
+			  <li><a href="css_examples16.html">16</a></li>
+			  <li><a href="css_examples17.html">17</a></li>
+			  <li><a href="css_examples18.html">18</a></li>
+			  <li><a href="css_examples19.html">19</a></li>
+			  <li><a href="css_examples20.html">20</a></li>
+			  <li><a href="css_examples21.html">21</a></li>
+			  <li><a href="css_examples22.html">22</a></li>
+			  <li><a href="css_examples23.html">23</a></li>
+			  <li><a href="css_examples24.html">24</a></li>
+			  <li><a href="css_examples25.html">25</a></li>
+			  <li><a href="css_examples26.html">26</a></li>
+			  <li><a href="css_examples27.html">27</a></li>
+			  <li><a href="css_examples28.html">28</a></li>
+			  <li><a href="css_examples29.html">29</a></li>
+			  <li><a href="css_examples30.html">30</a></li>
+			  <li><a href="css_examples31.html">31</a></li>
+			  <li><a href="css_examples32.html">32</a></li>
+			  <li><a href="css_examples33.html">33</a></li>
+			  <li><a href="css_examples34.html">34</a></li>
+			  <li><a href="css_examples35.html">35</a></li>
+			  <li><a href="css_examples36.html">36</a></li>
+			  <li><a href="css_examples37.html">37</a></li>
+			  <li><a href="css_examples38.html">38</a></li>
+			  <li><a href="css_examples39.html">39</a></li>
+			  <li><a href="css_examples40.html">40</a></li>
+			  <li><a href="css_examples6.html">»</a></li>
+			</ul>
+
+		<hr>
+
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples6.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+
+	</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 16</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  div p {
+		  background-color: lime;
+		  }
+		  
+	  div#child > p {
+		  background-color: orange;
+		  }
+		  
+	  div#adjacent + p {
+		  background-color: blue;
+		  color: white;
+		  }
+	  #container div~p {
+		  background-color: yellow;
+		  }
+		  
+	 p a:after {
+		  content: "(" attr(href) ")";
+		  }
+		  
+	  #section {
+		  counter-reset: section;
+		  }
+		  
+	  div#section h3 {
+		  counter-reset: subsection;
+		  }
+		  
+	  div#section h3:before {
+		  counter-increment: section;
+		  content: "Section " counter(section) ".";
+		  }
+		  
+	  div#section h4:before {
+		  counter-increment: subsection;
+		  content: counter(section) "." counter(subsection) " ";
+		  }
+		  
+	  q:lang(en) {
+		  quotes: "«" "»" "‹" "›";
+		  }
+	  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Combinators</h1>
+	
+	<h3>Descendant Selector</h3>
+	
+	<p>The following example uses the descendant selector <b>div p</b> to target 3 paragraphs in a div. The paragraphs outside the div are not styled:</p>
+	
+	<div>
+	  <p>Descendant of div</p>
+	  <p>Descendant of div</p>
+	  <span><p>Descendant of div (wrapped with span tags)</p></span>
+	</div>
+	<p>outside of div (not a descendant)</p>
+	<p>outside of div (not a descendant)</p>
+	
+	<hr>
+	
+	<h3>Child Selector</h3>
+	
+	<p>The following example uses the child selector <b>div > p</b> to target 2 paragraphs in a div. The remaining paragraphs are not styled:</p>
+	
+	<div id="child">
+	  <p>Child element</p>
+	  <p>Child element</p>
+	  <span><p>Descendant but not child.</p></span>
+	</div>
+	
+	<hr>
+	
+	<h3>Adjacent Sibling Selector</h3>
+	
+	<p>The following example uses the adjacent sibling selector <b>div + p</b> to target an element that is adjacent to the div:</p>
+	
+	<div id="adjacent">
+	  <p>Child of div</p>
+	  <p>Child of div</p>
+	</div>
+	
+	<p>not in div (adjacent)</p>
+	<p>not in div (not adjacent)</p>
+	
+	<hr>
+	
+	<h3>General Sibling Selector</h3>
+	
+	<p>The following example uses the general sibling selector <b>div ~ p</b> to target the general siblings of the div:</p>
+	
+	<div id="container">
+	<div id="sibling">
+	  <p>Not a sibling</p>
+	  <p>Not a sibling</p>
+	</div>
+	
+	<p>General Sibling</p>
+	<p>General Sibling</p>
+	</div>
+	
+	<h2>CSS Generated Content</h2>
+	
+	<h3>Insert URL using Content Property</h3>
+	
+	<p>The following example uses the CSS content property to insert a URL in paraenthesis <b>after</b> the link:</p>
+	
+	<p><a href="http://www.bing.com">Bing!</a></p>
+	
+	<hr>
+	
+	<h3>Numbering Sections and Subsections</h3>
+	
+	<p>The following example uses counter increment and content to insert sections and subsections <b>before</b> the content:</p>
+	
+	<div id="section">
+	<h3>Main</h3>
+	<h4>Sub</h4>
+	<h4>Sub</h4>
+	<h4>Sub</h4>
+	
+	<h3>Main</h3>
+	<h4>Sub</h4>
+	<h4>Sub</h4>
+	
+	<h3>Main</h3>
+	<h4>Sub</h4>
+	<h4>Sub</h4>
+	</div>
+	
+	<hr>
+	
+	<h3>Specify Quotes with Quotes Property in CSS</h3>
+	
+	<p><q>This is a <q>big</q> quote!</q></p>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples15.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="#" class="active">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples17.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples17.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

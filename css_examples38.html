@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS3 Examples 38</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		    
+	  
+	  .container {
+		  display: flex;
+		  flex-flow: row wrap;
+		  text-align: center;
+		  }
+		  
+	  .container > * {
+		  padding: 10px;
+		  flex:  1 100%;   /*flex-grow; flex-shrink; flex-basis;*/
+		  }
+		  
+	  .main {
+		  text-align: left;
+		  /*border: 1px solid green;*/
+		  background: palegreen;
+		  }
+		  
+	  .header {
+		 /* border: 1px solid red;*/
+		  background: paleturquoise;
+		  }
+		  
+	  .aside1 {
+		 /* border: 1px solid blue;*/
+		  background: palevioletred;
+		  }
+		  
+	  .aside2 {
+		  /*border: 1px solid orange;*/
+		  background: rosybrown;
+		  }
+		  
+	  .footer {
+		  /*border: 1px solid black;*/
+		  background: silver;
+		  }
+		  
+	  @media all and (min-width: 600px) {
+            .aside { flex: 1 auto; }
+          }
+
+	  @media all and (min-width: 800px) {
+			.main    { flex: 3 0px; }
+			.aside1 { order: 1; } 
+			.main    { order: 2; }
+			.aside2 { order: 3; }
+			.footer  { order: 4; }
+		  }
+		  
+		  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	
+	<h1>Responsive Web Design with Flexbox</h1>
+	
+	<h2>Resize the browser to see the effect:</h2>
+	
+	<div class="container">
+	  <header class="header">Header</header>
+	  <article class="main">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+	  </article>
+	  <aside class="aside aside1">Aside 1</aside>
+	  <aside class="aside aside2">Aside 2</aside>
+	  <footer class="footer">Footer</footer>
+	</div>
+	
+	
+	
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples37.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="#" class="active">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples39.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples39.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	</body>
+
+</html>

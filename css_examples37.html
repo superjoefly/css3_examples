@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS3 Examples 37</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  b {
+		  font-size: 20px;
+		  }
+		  
+	  .container1 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: cadetblue;
+		  display: flex;
+		  }
+		  
+	  .container1 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container2 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: cadetblue;
+		  display: flex;
+		  flex-direction: row-reverse;
+		  }
+		  
+	  .container2 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+      .container3 {
+		   width: 300px;
+		   height: 500px;
+		   background-color: coral;
+		   display: flex;
+		   flex-direction: column;
+		   }		 
+		   
+	   .container3 .item {
+		   width: 100px;
+		   height: 100px;
+		   background-color: cornsilk;
+		   margin: 10px;
+		   }
+		   
+	  .container4 {
+		  width: 300px;
+		  height: 500px;
+		  background-color: coral;
+		  display: flex;
+		  flex-direction: column-reverse;
+		  }
+		  
+	  .container4 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: cornsilk;
+		  margin: 10px;
+		  }
+		  
+	  .container5 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: blueviolet;
+		  display: flex;
+		  justify-content: flex-end;
+		  }
+		  
+	  .container5 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container6 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: blueviolet;
+		  display: flex;
+		  justify-content: center;
+		  }
+		  
+	  .container6 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container7 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: lightgrey;
+		  display: flex;
+		  justify-content: space-between;
+		  }
+		  
+	  .container7 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: cyan;
+		  margin: 10px;
+		  }
+		  
+	  .container8 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: lightgrey;
+		  display: flex;
+		  justify-content: space-around;
+		  }
+		  
+	  .container8 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: cyan;
+		  margin: 10px;
+		  }
+		  
+	  .container9 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: crimson;
+		  display: flex;
+		  align-items: stretch;
+		  }
+		  
+	  .container9 .item {
+		  width: 100px;
+		  /*height: 100px;*/
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container10 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: crimson;
+		  display: flex;
+		  align-items: flex-start;
+		  }
+		  
+	  .container10 .item {
+		  width: 100px;
+		  height: 50px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container11 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: crimson;
+		  display: flex;
+		  align-items: flex-end;
+		  }
+		  
+	  .container11 .item {
+		  width: 100px;
+		  height: 50px;
+		  background-color: beige;
+		  margin: 10px;
+		  }
+		  
+	  .container12 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: darkseagreen;
+		  display: flex;
+		  align-items: center;
+		  }
+		  
+	  .container12 .item {
+		  width: 100px;
+		  height: 50px;
+		  background-color: darkorange;
+		  margin: 10px;
+		  }
+		  
+	  .container13 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: darkseagreen;
+		  display: flex;
+		  align-items: baseline;
+		  }
+		  
+	  .container13 .item {
+		  width: 100px;
+		  height: 50px;
+		  background-color: darkorange;
+		  margin: 10px;
+		  }
+		  
+	  .container14 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: beige;
+		  display: flex;
+		  flex-wrap: wrap;
+		  }
+		  
+	  .container14 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: dodgerblue;
+		  margin: 10px;
+		  }
+		  
+	  .container15 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: beige;
+		  display: flex;
+		  flex-wrap: wrap-reverse;
+		  }
+		  
+	  .container15 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: dodgerblue;
+		  margin: 10px;
+		  }
+		  
+	  .container16 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: darkgrey;
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-content: center;
+		  }
+		  
+	  .container16 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: cornsilk;
+		  margin: 10px;
+		  }
+		  
+	  .container17 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: maroon;
+		  display: flex;
+		  }
+		  
+	  .container17 .item {
+		  height: 100px;
+		  width: 100px;
+		  background-color: cornsilk;
+		  margin: 10px;
+		  }
+		  
+	  .container17  .c {
+		  order: -2;
+		  }
+		  
+	  .container17 .e {
+		  order: -1;
+		  }
+		  
+	  .container18 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: darkcyan;
+		  display: flex;
+		  }
+		  
+	  .container18 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: azure;
+		  margin: 10px;
+		  }
+		  
+	  .container18 .c {
+		  margin-left: auto;
+		  }
+		  
+	  .container19 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: peru;
+		  display: flex;
+		  }
+		  
+	  .container19 .item {
+		  width: 200px;
+		  height: 200px;
+		  background-color: lightblue;
+		  margin: auto;
+		  }
+		  
+	  .container20 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: palevioletred;
+		  display: flex;
+		  }
+		  
+	  .container20 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: papayawhip;
+		  margin: 10px;
+		  }
+		  
+	  .container20 .item1 {
+		  align-self: flex-start;
+		  }
+		  
+	  .container20 .item2 {
+		  align-self: flex-end;
+		  }
+		  
+	  .container20 .item3 {
+		  align-self: center;
+		  }
+		  
+	  .container20 .item4 {
+		  align-self: baseline;
+		  }
+		  
+	  .container20 .item5 {
+		  height: auto;
+		  align-self: stretch;
+		  }
+		  
+	  .container21 {
+		  width: 100%;
+		  height: 300px;
+		  background-color: olivedrab;
+		  display: flex;
+		  flex-wrap: wrap;
+		  }
+		  
+	  .container21 .item {
+		  width: 100px;
+		  height: 100px;
+		  background-color: palegreen;
+		  margin: 10px;
+		  }
+		  
+	  .container21 .item1 {
+		  flex: 3;
+		  }
+		  
+	  .container21 .item2 {
+		  flex: 1;
+		  }
+	  
+	  .container21 .item3 {
+		  flex: 1;
+		  }
+	  
+	  .container21 .item4 {
+		  flex: 2;
+		  }
+	  
+	  .container21 .item5 {
+		  flex: 1;
+		  }
+		  
+	  
+		  
+		  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS3 Flexbox</h1>
+	
+	<p>Flexbox With 3 Flex Items <b>(flex-direction: row;)</b></p>
+	
+	<div class="container1">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Flexbox with Right to Left Dirction <b>(flex-direction: row-reverse;)</b></p>
+	
+	<div class="container2">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Flexbox with Top to Bottom Direction <b>(flex-direction: column;)</b></p>
+	
+	<div class="container3">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Flexbox with Bottom to Top Direction <b>(flex-direction: column-reverse;)</b></p>
+	
+	<div class="container4">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Move flex items to the end <b>(justify-content: flex-end;)</b></p>
+	
+	<div class="container5">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Center flex items on horizontal line (horizontal alignment) <b>(justify-content: center;)</b></p>
+	
+	<div class="container6">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Put space between flex items <b>(justify-content: space-between;)</b></p>
+	
+	<div class="container7">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Put space around flex items <b>(justify-content: space-around;)</b></p>
+	
+	<div class="container8">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Make flex items stretch to bottom <b>(align-items: stretch;)</b></p>
+	
+	<div class="container9">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Position flex items at the top of the container <b>(align-items: flex-start;)</b></p>
+	
+	<div class="container10">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Position flex items at the bottom of the container <b>(align-items: flex-end;)</b></p>
+	
+	<div class="container11">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Center flex items on vertical line (vertical alignment) <b>(align-items: center;)</b></p>
+	
+	<div class="container12">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Position flex items at the baseline of the container <b>(align-items: baseline;)</b></p>
+	
+	<div class="container13">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Make the flex items wrap <b>(flex-wrap: wrap;)</b></p>
+	
+	<div class="container14">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	  <div class="item">Item 4</div>
+	  <div class="item">Item 5</div>
+	</div>
+	
+	<hr>
+	
+	<p>Make the flex items wrap in a reverse direction <b>(flex-wrap: wrap-reverse;)</b></p>
+	
+	<div class="container15">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	  <div class="item">Item 4</div>
+	  <div class="item">Item 5</div>
+	</div>
+	
+	<hr>
+	
+	<p>Center align flex <u>lines</u> <b>(align-content: center;)</b> this modifies the behavior of flex wrap and is similar to align-items: center;</p>
+	
+	<div class="container16">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item">Item 3</div>
+	  <div class="item">Item 4</div>
+	  <div class="item">Item 5</div>
+	</div>
+	
+	<hr>
+	
+	<p>Ordering of flex items <b>(order: x;)</b></p>
+	
+	<div class="container17">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item c">Item 3</div>
+	  <div class="item">Item 4</div>
+	  <div class="item e">Item 5</div>
+	</div>
+	
+	<hr>
+	
+	<p>Absorb extra space and push flex items into different positions <b>(margin-left: auto;)</b></p>
+	
+	<div class="container18">
+	  <div class="item">Item 1</div>
+	  <div class="item">Item 2</div>
+	  <div class="item c">Item 3</div>
+	</div>
+	
+	<hr>
+	
+	<p>Perfect centering of flex item <b>(margin: auto;)</b></p>
+	
+	<div class="container19">
+	  <div class="item">Item 1</div>
+	</div>
+	
+	<hr>
+	
+	<p>Align individual flex items (align-self: x;)</p>
+	
+	<div class="container20">
+	  <div class="item item1">flex-start</div>
+	  <div class="item item2">flex-end</div>
+	  <div class="item item3">center</div>
+	  <div class="item item4">baseline</div>
+	  <div class="item item5">stretch</div>
+	</div>
+	
+	<hr>
+	
+	<p>Specify the length of flex item relative to the other flex items (flex: x;)</p>
+	
+	<div class="container21">
+	  <div class="item item1">flex:3</div>
+	  <div class="item item2">flex:1</div>
+	  <div class="item item3">flex:1</div>
+	  <div class="item item4">flex:2</div>
+	  <div class="item item5">flex:1</div>
+	</div>
+	
+	<h2>More flex properties:</h2>
+	
+	<ul>
+	  <li><b>flex-basis:</b> specifies initial length (along the line) of flex item (example: flex-basis: 200px;)(default value is auto); if a flex basis is not specified, length is according to content.</li>
+	  
+	  <li><b>flex-grow:</b> specifies how much a flex item will grow relative to the rest of the flex items (default value is 0).</li>
+	  
+	  <li><b>flex-shrink:</b> specifies how much a flex item will shrink relative to the rest of the flex items (default value is 0).</li>
+	</ul>
+	
+	<p><strong>Note:</strong> one solution to get equal width flex items is to set <b>flex-grow: 0; and flex-basis: x;</b></p>
+	
+	<p><strong>Imprtant:</strong> the flex property is shorthand for the flex-grow, flex-shrink and flex-basis properties; <br><br>
+	(default value is <b>0 1 auto;</b>)
+	</p>
+	
+	<h3>Syntax:</h3>
+	<p><strong>flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;</strong></p>
+	
+	
+	
+	
+	
+	
+	
+	<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples36.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="#" class="active">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples38.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples38.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

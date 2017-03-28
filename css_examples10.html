@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 10</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  #t1 {
+		  border: 1px solid navy;
+		  width: 50%;
+		  padding: 8px;
+		  }
+		  
+	  #t1 th, #t1 td {
+		  border: 1px solid navy;
+		  }
+		  
+	  #t2 {
+		  border: 1px solid blue;
+		  width: 50%;
+		  padding: 8px;
+		  border-collapse: collapse;
+		  }
+		  
+	  #t2 th, #t2 td {
+		  border: 1px solid blue;
+		  }
+		  
+	  #t3 {
+		  border: 2px solid red;
+		  width: 50%;
+		  padding: 8px;
+		  }
+		  
+	  #t4 {
+		  width: 100%;
+		  height: 150px;
+		  border: 1px solid green;
+		  border-collapse: collapse;
+		  }
+		  
+	  #t4 th, #t4 td {
+		  border: 1px solid green;
+		  padding: 8px;
+		  }
+		  
+	  #t5 {
+		  width: 100%;
+		  border: 1px solid orange;
+		  border-collapse: collapse;
+		  text-align: left;
+		  }
+		  
+	  #t5 th, #t5 td {
+		  border: 1px solid orange;
+		  padding: 8px;
+		  }
+		  
+	  #t6, #t6 th, #t6 td {
+		  border: 1px solid grey;
+		  }
+		  
+	  #t6 {
+		  border-collapse: collapse;
+		  width: 50%;
+		  }
+		  
+	  #t6 td {
+		  height: 50px;
+		  vertical-align: bottom;
+		  }
+		  
+	  #t7, #t7 th, #t7 td {
+		  border: 1px solid blue;
+		  text-align: left;
+		  }
+		  
+	  #t7 {
+		  border-collapse: collapse;
+		  width: 50%;
+		  }
+		  
+	  #t7 th, #t7 td {
+		  padding: 15px;
+		  }
+		  
+	  #t8 {
+		  border-collapse: collapse;
+		  width: 100%;
+		  }
+		  
+	  #t8 th, #t8 td {
+		  padding: 8px;
+		  text-align: center;
+		  border-bottom: 1px solid red;
+		  }
+		  
+	  #t9 {
+		  border-collapse: collapse;
+		  width: 100%;
+		  }
+		  
+	  #t9 th, #t9 td {
+		  border-bottom: 1px solid grey;
+		  padding: 8px;
+		  text-align: center;
+		  }
+		  
+	  #t9 tr:hover {
+		  background-color: #c1d9ff;
+		  }
+		  
+	  #t10 {
+		  border-collapse: collapse;
+		  width: 50%;
+		  }
+		  
+	  #t10 th, #t10 td {
+		  text-align: left;
+		  padding: 8px;
+		  }
+		  
+	  #t10 tr:nth-child(even) {
+		  background-color: #d1d1d1;
+		  }
+		  
+	  #t11 {
+		  border-collapse: collapse;
+		  width: 50%;
+		  }
+		  
+	  #t11 th, #t11 td {
+		  text-align: center;
+		  padding: 8px;
+		  }
+		  
+	  #t11 tr:nth-child(even) {
+		  background-color: #e0ecff;
+		  }
+		  
+	  #t11 th {
+		  background-color: #82b1ff;
+		  color: white;
+		  }
+		  
+	  #t12 {
+		  width: 50%;
+		  border-collapse: collapse;
+		  }
+		  
+	  #t12, #t12 th, #t12 td {
+		  border: 1px solid orange;
+		  text-align: left;
+		  padding: 8px;
+		  }
+		  
+	  #t12 caption {
+		  caption-side: bottom;
+		  }
+		  
+	  #t13 {
+		  border-collapse: collapse;
+		  width: 100%;
+		  }
+		  
+	  #t13 th, #t13 td {
+		  text-align: left;
+		  padding: 8px;
+		  }
+		  
+	  #t13 tr:nth-child(even) {
+		  background-color:  #e0ecff;
+		  }
+		  
+	  #container {
+		  border: 1px solid grey;
+		  width: 75%;
+		  overflow-x: auto;
+		  }
+		  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Tables</h1>
+	
+	<h3>Table with Border</h3>
+	
+	<p>The following table has a <b>black border:</b></p>
+	
+	<table id="t1">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Collapse Borders</h3>
+	
+	<p>The following table has <b>collapsed borders:</b></p>
+	
+	<table id="t2">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Single Border</h3>
+	
+	<p>The following table has a <b>single border:</b></p>
+	
+	<table id="t3">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Table Width and Height</h3>
+	
+	<p>The following table has a <b>width of 100% and a height of 150px:</b></p>
+	
+	<table id="t4">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Horizontal Alignment (text-align)</h3>
+	
+	<p>The following table has the <b>heading text aligned to the left:</b></p>
+	
+	<table id="t5">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Vertical Alignment (vertical-align)</h3>
+	
+	<p>The following table has <b>text aligned vertically to the bottom of each cell:</b></p>
+	
+	<table id="t6">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Table Content Padding</h3>
+	
+	<p>The following table has a <b>padding of 15px for the table heading and table data cells:</b></p>
+	
+	<table id="t7">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Bordered Table Dividers</h3>
+	
+	<p>The following table has <b>red horizontal dividers:</b></p>
+	
+	<table id="t8">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Hoverable Table</h3>
+	
+	<p>The following table's <b>rows change background color on hover:</b></p>
+	
+	<table id="t9">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Striped Tables</h3>
+	
+	<p>The following table has <b>alternating striped rows:</b></p>
+	
+	<table id="t10">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Colored Table Header</h3>
+	
+	<p>The following table has a <b>colored table header:</b></p>
+	
+	<table id="t11">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Bottom Table Caption</h3>
+	
+	<p>The following table has a <b>caption at the bottom:</b></p>
+	
+	<table id="t12">
+		<caption>Tables: Example 12</caption>
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	  </tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Responsive Table</h3>
+	
+	<p>The following table is <b>responsive and will display a horizontal scroll bar if there isn't enough room to display the content:</b></p>
+	
+	<div id="container">
+	<table id="t13">
+	  <tr>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Sex</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	    <th>Points</th>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>Male</td>
+	    <td>35</td>
+	    <td>25</td>
+	    <td>80</td>
+	    <td>33</td>
+	    <td>100</td>
+	    <td>35</td>
+	    <td>25</td>
+	    <td>80</td>
+	    <td>33</td>
+	    <td>100</td>
+	  </tr>
+	  <tr>
+	    <td>Amanda</td>
+	    <td>Panda</td>
+	    <td>Female</td>
+	    <td>66</td>
+	    <td>45</td>
+	    <td>48</td>
+	    <td>39</td>
+	    <td>0</td>
+	    <td>66</td>
+	    <td>45</td>
+	    <td>48</td>
+	    <td>39</td>
+	    <td>0</td>
+	  </tr>
+	  <tr>
+	    <td>Brian</td>
+	    <td>Lion</td>
+	    <td>Male</td>
+	    <td>12</td>
+	    <td>68</td>
+	    <td>94</td>
+	    <td>47</td>
+	    <td>85</td>
+	    <td>12</td>
+	    <td>68</td>
+	    <td>94</td>
+	    <td>47</td>
+	    <td>85</td>
+	  </tr>
+	</table>
+	</div>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples9.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="#" class="active">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples11.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples11.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

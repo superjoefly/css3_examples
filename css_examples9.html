@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 9</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  #ex1 {
+		  list-style-image: url("Images/smflower.jpg")
+		  }
+		  
+	  #ex2 {
+		  list-style-position: outside;
+		  }
+		  
+	  #ex3 {
+		  list-style-position: inside;
+		  }
+		  
+	  #ex4 {
+		  list-style: circle inside url('Images/smflower.jpg');
+		  }
+		  
+	  #ex5 {
+		  width: 50%;
+		  background: #42f4df;
+		  padding: 15px;
+		  }
+		  
+	  #ex5 li {
+		  background: #e1f7f4;
+		  padding: 10px;
+		  margin-left: 20px;
+		  }
+	  
+	  #ex6 {
+		  width: 50%;
+		  background: #b0ff91;
+		  padding: 15px;
+		  }
+		  
+	  #ex6 li {
+		  background: #e3ffd8;
+		  padding: 10px;
+		  margin-left: 20px;
+		  }
+		  
+	  #ex7 {
+		  list-style-type: none;
+		  width: 50%;
+		  background: #ffa3f4;
+		  padding: 15px;
+		  border: 1px solid black;
+		  }
+		  
+	  #ex7 li {
+		  background: #e2e2e2;
+		  padding: 10px;
+		  margin-left: 20px;
+		  border-bottom: 1px solid black;
+		  }
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Lists</h1>
+	
+	<h3>List Item Markers</h3>
+	
+	<p>The following shows all the different list item markers for lists:</p>
+	
+	<h3>Unordered List Types</h3>
+	
+	<ul style="list-style-type: circle;">
+	  <li>Circle Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ul
+	
+	<ul style="list-style-type: disc;">
+	  <li>Disc Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ul>
+	
+	<ul style="list-style-type: square;">
+	  <li>Square Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ul>
+	
+	<hr>
+	
+	<h3>Ordered List Types</h3>
+	
+	<ol style="list-style-type: armenian;">
+	  <li>Armenian Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: cjk-ideographic;">
+	  <li>Cjk-ideographic Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: decimal">
+	  <li>Decimal Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: decimal-leading-zero;">
+	  <li>Decimal-leading-zero Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: georgian;">
+	  <li>Georgian Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: hebrew;">
+	  <li>Hebrew Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: hiragana;">
+	  <li>Hiragan Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: hiragana-iroha;">
+	  <li>Hiragan-iroha Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: katakana;">
+	  <li>Katakana Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: katakana-iroha;">
+	  <li>Katakana-iroha Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: lower-alpha;">
+	  <li>Lower-alpha Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: lower-greek;">
+	  <li>Lower-greek Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: lower-latin;">
+	  <li>Lower-latin Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: lower-roman;">
+	  <li>Lower-roman Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: upper-alpha;">
+	  <li>Upper-alpha Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: upper-latin;">
+	  <li>Upper-latin Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: upper-roman;">
+	  <li>Upper-roman Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: none;">
+	  <li>None Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<ol style="list-style-type: inherit">
+	  <li>inherit Type</li>
+	  <li>Tea</li>
+	  <li>Coffee</li>
+	</ol>
+	
+	<hr>
+	
+	<h3>Image as List Item Marker</h3>
+	
+	<p>The following example shows an image used for the list item marker:</p>
+	
+	<ul id="ex1">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	<hr>
+	
+	<h3>List Style Position</h3>
+	
+	<p>The following list-style-position is set to <b>outside</b> (default):</p>
+	
+	<ul id="ex2">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	<p>The following list-style-position is set to <b>inside:</b></p>
+	
+	<ul id="ex3">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	<hr>
+	
+	<h3>List Style Shorthand</h3>
+	
+	<p>The following example uses the list-style shorthand property:</p>
+	
+	<ul id="ex4">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	<hr>
+	
+	<h3>Colored Lists</h3>
+	
+	<p>The following two examples have been styled with colors:</p>
+	
+	<ul id="ex5">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	<ol id="ex6">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ol>
+	
+	<hr>
+	
+	<h3>Bordered List</h3>
+	
+	<p>The following example shows a list with a border:</p>
+	
+	<ol id="ex7">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ol>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples8.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="#" class="active">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples10.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples10.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

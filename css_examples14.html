@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 14</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  #clearfix {
+		  clear: both;
+		  }
+		  
+	  #flright {
+		  height: 100px;
+		  width: 100px;
+		  background-color: blue;
+		  float: right;
+		  color: white;
+		  }
+		  
+	  #flleft {
+		  height: 100px;
+		  width: 100px;
+		  background-color: green;
+		  float: left;
+		  color: white;
+		  margin: 15px 15px 0 0;
+		  }
+		  
+	  #flright2 {
+		  height: 100px;
+		  width: 100px;
+		  background-color: red;
+		  float: right;
+		  color: white;
+		  margin: 10px;
+		  position: relative;
+		  border: 1px solid black;
+		  }
+		  
+	   span {
+		  position: absolute;
+		  bottom: 0;
+		  margin: auto;
+		  text-align: center;
+		  }
+		  
+	  #container {
+		  width: 50%;
+		  height: 200px;
+		  border: 2px solid blue;
+		  overflow: auto;
+		  text-align: center;
+		  }
+	  
+	  #galbox {
+		  height: 75px;
+		  width: 75px;
+		  text-align: center;
+		  margin: 10px;
+		  padding: 5px;
+		  float: left;
+		  border: 2px solid orange;
+		  display: inline-block;
+		  }
+		  
+	  #div1 {
+		  float: left;
+		  width: 100px;
+		  height: 50px;
+		  margin: 10px;
+		  border: 2px solid purple;
+		  }
+		  
+	  #div2 {
+		  border: 2px solid green;
+		  }
+	  
+	  #div3 {
+		  float: left;
+		  width: 100px;
+		  height: 50px;
+		  margin: 10px;
+		  border: 2px solid red;
+		  }
+		  
+	  #div4 {
+		  border: 2px solid lime;
+		  clear: left;
+		  }
+		  
+	  ul {
+		  list-style-type: none;
+		  maring: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: cornflowerblue;
+		  }
+		  
+	  li {
+		  float: left;
+		  }
+		  
+      li a {
+		  display: inline-block;
+		  color: white;
+		  text-align: center;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		  }
+		  
+	  li a:hover {
+		  background-color: azure;
+		  color: navy;
+		  }
+		  
+	  #container2 {
+		  width: 75%;
+		  margin: auto;
+		  border: 1px solid cornflowerblue;
+		  line-height: 150%;
+		  }
+		  
+	  #header, #footer {
+		  padding: .5em;
+		  color: white;
+		  background-color: darkcyan;
+		  clear: left;
+		  }
+		  
+	  h1#header {
+		  padding: 0px;
+		  margin: 0px;
+		  }
+		  
+	  #section1 {
+		  float: left;
+		  width: 200px;
+		  margin: 0;
+		  padding: 1em;
+		  border-right: 1px solid grey;
+		  }
+		  
+	  #section2 {
+		  text-align: center;
+		  }
+		  
+		  
+	  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Floating</h1>
+	
+	<h3>Simple Float</h3>
+	
+	<p>The following example shows a <b>div that has been floated to the right of a paragraph:</b></p>
+	
+	<p><div id="flright">I'm a div that is floated to the right!</div>I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!</p>
+	
+	<hr>
+	
+	<h3>Float with Margins</h3>
+	
+	<p>The following example shows a <b>div with margins</b> that has been <b>floated to the left</b> of a paragraph:</p>
+	
+	<p><div id="flleft">I'm a div that is floated to the left!</div>I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!</p>
+	
+	<br>
+	<hr>
+	
+	<h3>Floated Div with Caption</h3>
+	
+	<p>The following div has a caption and has been floated to the right:</p>
+	
+	<div id="flright2"><span>I'm a div with a Caption!</span></div>
+	
+	<p>I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!I'm a paragraph!</p>
+	
+	<div id="clearfix"></div>
+	
+	<hr>
+	
+	<h3>Image Gallery</h3>
+	
+	<div id="container">
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	<div id="galbox">Floating</div>
+	</div>
+	
+	<hr>
+	
+	<h3>Clearing Divs</h3>
+	
+	<h4>Without Clear</h4>
+	<div id="div1">div 1</div>
+	<div id="div2">This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!</div>
+	
+	<br>
+	<br>
+	<br>
+	
+	<hr>
+	
+	<h4>Using Clear</h4>
+	<div id="div3">div3</div>
+	<div id="div4">This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!</div>
+	
+	<hr>
+	
+	<h3>Horizontal Menu</h3>
+	
+	<ul>
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">News</a></li>
+	  <li><a href="#">Contact</a></li>
+	</ul>
+	
+	<hr>
+	
+	<h3>Page Layout Using Floats</h3>
+	
+	<div id="container2">
+	  <div id="header">
+	    <h4 id="header">Homepage</h4>
+	  </div>
+	  <div id="section1">
+	    <p>This is a paragraph!This is a paragraph!This is a paragraph!This is a paragraph!This is a paragraph!This is a paragraph!This is a paragraph!This is a paragraph!</p>
+	  </div>
+	  <div id="section2">
+	    <h4>I hope you enjoy your stay!</h4>
+	    <p>This is the most awesome webpage ever!!!</p>
+	    <p>If you don't realize this, then it's your loss!!!</p>
+	  </div>
+	  <div id="footer">&copy; Copyright by JDA</div>
+	</div>
+	
+		<hr>
+	
+	<ul class="main_pagination" style="background-color: white;">
+		  <li><a href="css_examples13.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="#" class="active">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples15.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples15.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	
+	</body>
+
+</html>

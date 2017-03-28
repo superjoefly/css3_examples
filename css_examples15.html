@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 15</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  body {
+		  margin: 0;
+		  padding: 0;
+		  }
+		  
+	  .test1 {
+		  height: 100px;
+		  width: 200px;
+		  border: 2px solid red;
+		  margin: auto;
+		  }
+		  
+	  .test2 {
+		  height: 100px;
+		  width: 200px;
+		  border: 2px solid blue;
+		  text-align: center;
+		  }
+		  
+	  .test3 {
+		  display: block;
+		  margin: 0 auto;
+		  }
+		  
+	  .test4  {
+		  width: 200px;
+		  height: 100px;
+		  border: 2px solid orange;
+		  position: absolute;
+		  right: 0px;
+		  }
+		  
+	  .container {
+		  position: relative;
+		  width: 100%;
+		  }
+		  
+	  .test5 {
+		  width: 200px;
+		  height: 100px;
+		  border: 2px solid green;
+		  position: absolute;
+		  right: 0px;
+		  }
+		  
+	  .test6 {
+		  width: 200px;
+		  height: 100px;
+		  border: 2px solid black;
+		  float: right;
+		  }
+		  
+	  #clearfix {
+		  clear: both;
+		  }
+		  
+	  .test7 {
+		  width: 200px;
+		  height: 100px;
+		  float: right;
+		  border: 2px solid blue;
+		  }
+		  
+	  .test8 {
+		  width: 200px;
+		  height: 100px;
+		  border: 2px solid red;
+		  padding: 50px 0px;
+		  }
+		  
+	  .test9 {
+		  width: 300px;
+		  height: 100px;
+		  border: 2px solid orange;
+		  text-align: center;
+		  padding: 50px 0;
+		  }
+		  
+	  .test10 {
+		  width: 50%;
+		  height: 100px;
+		  border: 2px solid blue;
+		  line-height: 50px;
+		  text-align: center;
+		  }
+		  
+	  .test10 p {
+		  display: inline-block;
+		  vertical-align: middle;
+		  }
+		  
+	  .test11 {
+		  width: 200px;
+		  height: 200px;
+		  border: 2px solid green;
+		  position: relative;
+		  }
+		  
+	  .test11 p {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  }
+		  
+	  </style>
+	</head>
+	
+	<body>
+	<h1>CSS Aligning Elements</h1>
+	
+	<h3>Center Div</h3>
+	
+	<p>The following following example uses <b>margin:auto;</b> to center the div:</p>
+	
+	<div class="test1">margin: auto;</div>
+	
+	<hr>
+	
+	<h3>Center Text Within a Div</h3>
+	
+	<p>The following example uses <b>text-align: center;</b> to center the text inside the div:</p>
+	
+	<div class="test2">text-align: center;</div>
+	
+	<hr>
+	
+	<h3>Center an Image</h3>
+	
+	<p>The following example uses <b>display: block;</b> and <b>margin: 0 auto;</b> to center the image:</p>
+	
+	<img class="test3" src="Images/snow1.jpg" alt="picture of snow" height="auto" width="150px">
+	
+	<hr>
+	
+	<h3>Align a Div with Position Property</h3>
+	
+	<p>The following example uses the <b>position property</b> to right align the div:</p>
+	
+	<div class="test4">position: absolute; <br> right: 0px</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<hr>
+	
+	<h3>Position: Cross Browser Solution (container)</h3>
+	
+	<p>The following example uses a "container" to provide a <b>cross browser solution</b> for positioning the div:</p>
+	
+	<div class="container">
+	  <div class="test5">Cross Browser Positioning: uses 0px margin and 0px padding for the body selector!</div>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<hr>
+	
+	<h3>Right Align with Float</h3>
+	
+	<p>The following example right-aligns a div using the <b>float property:</b></p>
+	
+	<div class="test6">float: right;</div>
+	
+	<div id="clearfix"></div>
+	
+	<hr>
+	
+	<h3>Float: Cross Browser Solution</h3>
+	
+	<div class="test7">Cross Browser Float: uses 0px margin and 0px padding for the body selector!</div>
+	
+	<div id="clearfix"></div>
+	
+	<hr>
+	
+	<h3>Vertical Center</h3>
+	
+	<p>The following example centers the content vertically using <b>padding:</b></p>
+	
+	<div class="test8">Vertical Center</div>
+	
+	<hr>
+	
+	<h3>Vertical and Horizontal Center</h3>
+	
+	<p>The following example uses <b>padding and text-align</b> to center the content:</p>
+	
+	<div class="test9">Vertical and Horizontal Center</div>
+	
+	<hr>
+	
+	<h3>Vertical Center Using Line Height</h3>
+	
+	<p>The following example uses <p>line-height</p> to vertically center the content:</p>
+	
+	<div class="test10"><p>vertical center using line-height</p></div>
+	
+	<hr>
+	
+	<h3>Center Using Positioning</h3>
+	
+	<p>The following example uses <p>transform and positioning</p> to center content:</p>
+	
+	<div class="test11">
+	  <p>Centered Using Position Property</p>
+	</div>
+	
+	
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples14.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="#" class="active">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples16.html">»</a></li>
+		</ul>
+		
+		<hr>
+		
+	<br>
+	<br>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples16.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

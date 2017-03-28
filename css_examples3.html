@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>CSS Examples 3</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+
+	#div1 {
+		border: 2px solid green;
+		height: 200px;
+		width: 200px;
+		margin-top: 50px;
+		margin-right: 100px;
+		margin-bottom: 10px;
+		margin-left: 100px;
+		background-color: beige;
+		}
+
+	#div2 {
+		border: 2px solid blue;
+		margin-left: 100px;
+		}
+
+	p.p1 {
+		margin-left: inherit;
+		}
+
+	#div3 {
+		border: 2px solid orange;
+		height: 200px;
+		width: 200px;
+		margin: 15px 50px 20px 50px;
+		background-color: #bcf2e4;
+	    }
+
+	#div4 {
+		border: 2px solid red;
+		height: 200px;
+		width: 200px;
+		margin: auto;
+		background-color: #f2cabc;
+		}
+
+	.p2 {
+		padding-left: 50%;
+		color: red;
+		border: 1px solid blue;
+		}
+
+	.p3 {
+		padding-right: 75%;
+		color: green;
+		border: 1px solid black;
+		}
+
+	.p4 {
+		padding-bottom: 20px;
+		color: orange;
+		border: 1px solid brown;
+		}
+
+	.p5 {
+		padding-top: 20px;
+		color: purple;
+		border: 1px solid black;
+		}
+
+	.p6 {
+		border: 1px solid red;
+		color: blue;
+		padding: 10px 100px 10px 100px;
+		text-align: center;
+		}
+
+	#div5 {
+		height: 100px;
+		width: 300px;
+		background-color: cornflowerblue;
+		}
+
+	#div6 {
+		height: 100px;
+		max-width: 50%;
+		background-color: #ed8e6f;
+		}
+
+	#img1 {
+		height: 200px;
+		width: 200px;
+		}
+
+	#img2 {
+		height: auto;
+		width: 50%;
+		}
+
+	#div7 {
+		max-width: 500px;
+		min-width: 200px;
+		height: 200px;
+		background-color: #ede46f;
+		}
+
+	#div8 {
+		max-height: 300px;
+		min-height: 150px;
+		width: 50%;
+		background-color: #a8ed6f;
+		}
+
+	#boxmodel {
+		height: 300px;
+		width: 50%;
+		margin: 20px;
+		border: 2px solid red;
+		padding: 10px;
+		background-color: #d1d1d1;
+		}
+
+	  </style>
+
+	</head>
+
+	<body>
+
+	<h1>CSS Margins</h1>
+
+	<h3>Individual Margin Properties</h3>
+
+	<div id="div1">This div element has a top margin of 50px, a right margin of 100px, a bottom margin of 10px and a left margin of 100px.</div>
+
+	<hr>
+
+	<h3>Inherited Margin</h3>
+
+	<div id="div2">
+	  <p class="p1">This is a paragraph with an <b>inherited left margin.</b></p>
+	</div>
+
+	<hr>
+
+	<h3>Margin Shorthand Property</h3>
+
+	<div id="div3">This div uses the margin shorthand property (margin: 15px 50px 20px 50px;).</div>
+
+	<hr>
+
+	<h3>Center Using Auto Value</h3>
+
+	<div id="div4">Centered using margin: auto;</div>
+
+	<hr>
+
+	<h1>CSS Padding</h1>
+
+	<h3>Set the Left Padding of an Element</h3>
+
+	<p>Text with no padding...</p>
+	<p class="p2">Text with 50% left padding...</p>
+	<p class="p3">Text with 75% right padding...</p>
+	<p class="p4">Text with 20px bottom padding...</p>
+	<p class="p5">Text with 20px top padding...</p>
+
+	<h3>Padding Shorthand Property</h3>
+
+	<p class="p6">This paragraph uses the padding shorthand property to set padding for each side in one declaration.</p>
+
+	<hr>
+
+	<h1>CSS Width and Height</h1>
+
+	<h3>Height and Width of an Element</h3>
+
+	<p>The following div has a height of 100px and a width of 300px:</p>
+
+	<div id="div5"></div>
+
+	<hr>
+
+	<h3>Set max-width of an Element</h3>
+
+	<p>The following div has a max-width of 50% (resize the window to see the effect):</p>
+
+	<div id="div6"></div>
+
+	<hr>
+
+	<h3>Set Height and Width of Elements</h3>
+
+	<p>The following image has a height of 200px and a width of 200px:</p>
+
+	<img src="Images/snow1.jpg" id="img1" alt="snow" height="200px" width="200px">
+
+	<hr>
+
+	<h3>Set Height and Width of Image Using %</h3>
+
+	<p>The following image has a height set to auto and a width of 50%:</p>
+
+	<img src="Images/snow2.jpg" alt="snow" id="img2" height="200px" width="200px">
+
+	<hr>
+
+	<h3>Set Max-Width and Min-Width of an Element</h3>
+
+	<div id="div7"></div>
+
+	<hr>
+
+	<h3>Set Max-Height and Min-Height of an Element</h3>
+
+	<div id="div8"></div>
+
+	<hr>
+
+	<h1>CSS Box Model</h1>
+
+	<p>The CSS box-model consists of margins, borders, padding and content. The following example uses all four properties:</p>
+
+	<div id="boxmodel">This div has a 20px margin, 2px border and 10px padding. <b>Note:</b> box sizing is set to border-box.</div>
+
+	<hr>
+
+	<ul class="main_pagination">
+		  <li><a href="css_examples2.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="#" class="active">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples4.html">»</a></li>
+		</ul>
+
+
+		<hr>
+
+
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples4.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	</body>
+
+</html>

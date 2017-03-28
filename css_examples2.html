@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>CSS Examples 2</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+
+	  p#one {
+		  border-style: solid;
+		  border-width: 5px;
+		  }
+
+	p#two {
+		border-style: solid;
+		border-width: medium;
+		}
+
+	p#three {
+		border-style: dotted;
+		border-width: 2px;
+		}
+
+	p#four {
+		border-style: dotted;
+		border-width: thick;
+		}
+
+	p#five {
+		border-style: double;
+		border-width: 15px;
+		}
+
+	p#six {
+		border-style: double;
+		border-width: thick;
+		}
+
+	p#seven {
+		border-style: solid;
+		border-width: 2px 10px 4px 20px;
+		}
+
+	p#eight {
+		border-style: solid;
+		border-top-width: 20px;
+		}
+
+	p#nine {
+		border-style: solid;
+		border-bottom-width: 20px;
+		}
+
+	p#ten {
+		border-style: solid;
+		border-left-width: 20px;
+		}
+
+	p#eleven {
+		border-style: solid;
+		border-right-width: 20px;
+		}
+
+	p#twelve {
+		border-style: solid;
+		border-color: #4286f4;
+		}
+
+	p#thirteen {
+		border-style: solid;
+		border-color: #b6c2d6 #ef8f6b;
+		}
+
+	p#fourteen {
+		border-style: solid;
+		border-color: #6befe6 #ef6be6 #efed6b;
+		}
+
+	p#fifteen {
+		border-style: solid;
+		border-color: #ef7d6b #74ef6b #6bc1ef #ef6bde;
+		}
+
+	p#sixteen {
+		border-style: solid;
+		border-top-color: red;
+		}
+
+	p#seventeen {
+		border-style: solid;
+		border-right-color: lime;
+		}
+
+	p#eighteen {
+		border-style: solid;
+		border-bottom-color: brown;
+		}
+
+	p#nineteen {
+		border-style: solid;
+		border-left-color: orange;
+		}
+
+	p#twenty {
+		border: 20px ridge lime;
+		}
+
+	p#twentyone {
+		border: 2px solid orange;
+		}
+
+	p#twentytwo {
+		border: 2px solid green;
+		border-radius: 5px;
+		}
+
+	p#twentythree {
+		border: 2px solid red;
+		border-radius: 8px;
+		}
+
+	p#twentyfour {
+		border: 2px solid blue;
+		border-radius: 10px;
+		}
+
+	p#twentyfive {
+		border-style: dotted;
+		}
+
+	p#twentysix {
+		border-style: dashed dotted solid;
+		}
+
+	p#twentyseven {
+		border-style: ridge solid dotted;
+		}
+
+	p#twentyeight {
+		border-style: double solid;
+		}
+
+	p#twentynine {
+		border-style: solid;
+		border-top: thick double #6befe9;
+		}
+
+	p#thirty {
+		border-style: solid;
+		border-bottom: thick dotted #f9ec31;
+		}
+
+	p#thirtyone {
+		border-style: solid;
+		border-left: medium dashed #f93156;
+		}
+
+	p#thirtytwo {
+		border-style: solid;
+		border-right: medium ridge #f5ff3f;
+		}
+
+	  </style>
+
+	</head>
+
+	<body>
+
+	<h1>CSS Borders</h1>
+
+	<h3>Set Width of Four Borders</h3>
+
+	<p id="one">5px, Solid</p>
+	<p id="two">Medium, Solid</p>
+	<p id="three">2px, Dotted</p>
+	<p id="four">Thick, Dotted</p>
+	<p id="five">15px, Double</p>
+	<p id="six">Thick, Double</p>
+	<p id="seven">Each side different width, Solid</p>
+
+	<hr>
+
+	<h3>Set Individual Border Width</h3>
+
+	<p id="eight">border-top-width: 20px</p>
+
+	<p id="nine">border-bottom-width: 20px;</p>
+
+	<p id="ten">border-left-width: 20px;</p>
+
+	<p id="eleven">border-right-width: 20px</p>
+
+	<hr>
+
+	<h3>Set Color of Four Borders</h3>
+
+	<p id="twelve">One Colored Border</p>
+
+	<p id="thirteen">Two Colored Border</p>
+
+	<p id="fourteen">Three Colored Border</p>
+
+	<p id="fifteen">Four Colored Border</p>
+
+	<hr>
+
+	<h3>Set Individual Border Color</h3>
+
+	<p id="sixteen">Colored Top Border</p>
+
+	<p id="seventeen">Colored Right Border</p>
+
+	<p id="eighteen">Colored Bottom Border</p>
+
+	<p id="nineteen">Colored Left Border</p>
+
+	<hr>
+
+	<h3>Border Shorthand Property</h3>
+
+	<p id="twenty">20px ridge lime...</p>
+
+	<hr>
+
+	<h3>Rounded Borders</h3>
+
+	<p id="twentyone">Normal Border</p>
+	<p id="twentytwo">Round Border</p>
+	<p id="twentythree">Rounder Border</p>
+	<p id="twentyfour">Roundest Border</p>
+
+	<hr>
+
+	<h3>Mulitple Style Bordering</h3>
+
+	<p id="twentyfive">Hello There!</p>
+
+	<p id="twentysix">Hello There!</p>
+
+	<p id="twentyseven">Hello There!</p>
+
+	<p id="twentyeight">Hellow There!</p>
+
+	<hr>
+
+	<h3>Multiple Declarations for Individual Borders</h3>
+
+	<p id="twentynine">Top Border</p>
+
+	<p id="thirty">Bottom Border</p>
+
+	<p id="thirtyone">Left Border</p>
+
+	<p id="thirtytwo">Right Border</p>
+
+	<hr>
+
+	<ul class="main_pagination">
+		  <li><a href="css_examples1.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="#" class="active">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples3.html">»</a></li>
+		</ul>
+
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples3.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+
+	</body>
+
+</html>

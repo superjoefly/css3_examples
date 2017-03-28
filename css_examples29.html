@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS3 Examples 29</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  #clipped {
+		  width: 200px;
+		  border: 1px solid blue;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-overflow: clip;
+		  }
+		  
+	  #ellipsis {
+		  width: 200px;
+		  border: 1px solid red;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  }
+		  
+	  #hover {
+		  width: 200px;
+		  border: 1px solid green;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  }
+		  
+	  #hover:hover {
+		  overflow: visible;
+		  }
+		  
+	  #break {
+		  width: 200px;
+		  border: 1px solid orange;
+		  word-wrap: break-word;
+		  }
+		  
+	  #hyphens {
+		  width: 150px;
+		  border: 1px solid brown;
+		  word-break: keep-all;
+		  }
+	  
+	  #any {
+		  width: 150px;
+		  border: 1px solid black;
+		  word-break: break-all;
+		  }
+		  
+	  @font-face {
+		  font-family: myFont;
+		  src: url(fonts/frozdotre.ttf);
+		  }
+		  
+	  #font {
+		  font-family: myFont;
+		  transform: scale(1,1.5);
+		  color: maroon;
+		  }
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS3 Text</h1>
+	
+	<h3>Clipped Text Overflow:</h3>
+	
+	<p id="clipped">This is some long text that will be clipped.This is some long text that will be clipped.</p>
+	
+	<hr>
+	
+	<h3>Ellipsis Overflow:</h3>
+	
+	<p id="ellipsis">This is some long text that will be clipped.This is some long text that will be clipped.</p>
+	
+	<hr>
+	
+	<h3>Show Overflow on Hover:</h3>
+	
+	<p id="hover">This is some long text that will be clipped.This is some long text that will be clipped.</p>
+	
+	<hr>
+	
+	<h3>Allow Word Breaking:</h3>
+	
+	<p id="break">This is some long text that will be clipped.This is some looooooooooooooooooooooooooooooooooong text that will be clipped.</p>
+	
+	<hr>
+	
+	<h3>Specify Line Breaking Rules:</h3>
+	
+	<p id="hyphens">This paragraph conains some text. This line will-break-at-hyphens...</p>
+	
+	<p id="any">This paragraph contains some text. This line will break at any character...</p>
+	
+	<h2>CSS3 Fonts</h2>
+	
+	<p id="font">With <strong>CSS3</strong>, websites can use fonts other than the pre-selected "web-safe" fonts!</p>
+	
+	<p><strong>If the font has a bold format, enter it the same way and wrap the word with bold tags.</strong></p>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples28.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="#" class="active">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples30.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples30.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

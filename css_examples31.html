@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS3 Examples 31</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  #ex1 {
+		  width: 300px;
+		  height: 150px;
+		  background-color: aqua;
+		  text-align: center;
+		  font-size: 20px;
+		  line-height: 150px;
+		  transform: rotateX(180deg);
+		  }
+		  
+	  #ex2 {
+		  width: 300px;
+		  height: 150px;
+		  background-color: blueviolet;
+		  text-align: center;
+		  font-size: 20px;
+		  line-height: 150px;
+		  transform: rotateY(180deg);
+		  }
+		  
+	  #ex3 {
+		  width: 300px;
+		  height: 150px;
+		  background-color: coral;
+		  text-align: center;
+		  line-height: 150px;
+		  font-size: 20px;
+		  transform: rotateZ(90deg);
+		  margin: 85px 0;
+		  }
+		  
+	  #ex4 {
+		  width: 100px;
+		  height: 100px;
+		  background: cornflowerblue;
+		  transition: width 2s;
+		  }
+		  
+	  #ex4:hover {
+		  width: 200px;
+		  }
+		  
+	  #ex5 {
+		  width: 100px;
+		  height: 100px;
+		  background: darkcyan;
+		  transition: width 2s, height 4s;
+		  }
+		  
+	  #ex5:hover {
+		  width: 300px;
+		  height: 150px;
+		  }
+		  
+	  #ex6 {
+		  width: 100px;
+		  height: 100px;
+		  background: darkorange;
+		  transition: width 2s;
+		  transition-timing-function: ease-in-out;
+		  }
+		  
+	  #ex6:hover {
+		  width: 300px;
+		  }
+		  
+	  #ex7 {
+		  width: 100px;
+		  height: 100px;
+		  background: darkorchid;
+		  transition: width 2s;
+		  transition-timing-function: linear;
+		  }
+		  
+	  #ex7:hover {
+		  width: 300px;
+		  }
+		  
+	  #ex8 {
+		  width: 100px;
+		  height: 100px;
+		  background: darkseagreen;
+		  transition: width 2s;
+		  transition-delay: 1.5s;
+		  }
+		  
+	  #ex8:hover {
+		  width: 300px;
+		  }
+		  
+	  #ex9 {
+		  height: 100px;
+		  width: 200px;
+		  background: deeppink;
+		  transition: width 2s, transform 2s;
+		  font-size: 40px;
+		  }
+		  
+	  #ex9:hover {
+		  width: 300px;
+		  transform: rotateX(180deg);
+		  }
+		  
+	  #ex10 {
+		  width: 100px;
+		  height: 100px;
+		  background: dodgerblue;
+		  transition: width 2s  ease-in-out 1s;
+		  }
+		  
+	  #ex10:hover {
+		  width: 200px;
+		  }
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS3 3D Transforms</h1>
+	
+	<h3>Rotate an Element AROUND Its X-Axis</h3>
+	
+	<p>The following element has been rotated around its x-axis and is now <b>upside down:</b></p>
+	
+	<div id="ex1">Center</div>
+	
+	<hr>
+	
+	<h3>Rotate an Element AROUND Its Y-Axis</h3>
+	
+	<p>The following element has been rotated around its y-axis and is now <b>backwards:</b></p>
+	
+	<div id="ex2">Center</div>
+	
+	<hr>
+	
+	<h3>Rotate an Element AROUND Its Z-Axis</h3>
+	
+	<p>The following element has been rotated around its z-axis and is now <b>sideways:</b></p>
+	
+	<div id="ex3">Center</div>
+	
+	<hr>
+	
+	<h1>CSS3 Transitions</h1>
+	
+	<h3>Change Width on Hover</h3>
+	
+	<p>The following element gets longer when you hover over it:</p>
+	
+	<div id="ex4"></div>
+	
+	<hr>
+	
+	<h3>Change Width and Height of an Element</h3>
+	
+	<p>The following element wider and higher when you hover over it:</p>
+	
+	<div id="ex5"></div>
+	
+	<hr>
+	
+	<h3>Speed Curves</h3>
+	
+	<p>The following different speed curves are available for transitions:</p>
+	
+	<ul>
+	  <li>ease: (default) slow start, then fast, then slow end</li>
+	  <li>linear: same speed from start to end</li>
+	  <li>ease-in: slow start</li>
+	  <li>ease-out: slow end</li>
+	  <li>ease-in-out: slow start and end</li>
+	  <li>cubic-bezier: define your own values</li>
+	</ul>
+	
+	<p>The following element has a transition-timing-function of <b>"ease-in-out":</b></p>
+	
+	<div id="ex6"></div>
+	
+	<p>The following element has a transition-timing-function of <b>"linear":</b></p>
+	
+	<div id="ex7"></div>
+	
+	<hr>
+	
+	<h3>Transition Delay</h3>
+	
+	<p>The following element has a transition-delay of 1.5 seconds:</p>
+	
+	<div id="ex8"></div>
+	
+	<hr>
+	
+	<h3>Transition with Transform</h3>
+	
+	<p>The following animation uses both a transition and a transform effect:</p>
+	
+	<div id="ex9">WHOAH!!!</div>
+	
+	<hr>
+	
+	<h3>Transition Shorthand</h3>
+	
+	<p>The following animation uses transition shorthand and specifies all the values in one declaration:</p>
+	
+	<div id="ex10"></div>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples30.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="#" class="active">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples32.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples32.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

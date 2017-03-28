@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 20</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		   /*Right Tooltip*/
+	  .tooltip1 {
+		  position: relative;
+		  display: inline-block;
+		  border-bottom: 1px dashed green;
+		  }
+		  
+	  .tooltip1 .tooltiptext1 {
+		  visibility: hidden;
+		  width: 120px;
+		  background-color: navy;
+		  color: beige;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  
+		  
+	  /*Position the tooltip*/
+	  
+		  position: absolute;
+		  z-index: 1;
+		  top: -5px;
+		  left: 105%;
+	  }
+	  
+	  .tooltip1:hover .tooltiptext1 {
+		  visibility: visible;
+		  }
+		  
+		  /*Left Tooltip*/
+		  
+	  .tooltip2 {
+		  position: relative;
+		  display: inline-block;
+		  border-bottom: 1px dashed yellow;
+		  right: -25%;
+		  }
+		  
+	  .tooltip2 .tooltiptext2 {
+		  visibility: hidden;
+		  width: 120px;
+		  background-color: orange;
+		  color: yellow;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  
+		  /*position the tooltip*/
+		  position: absolute;
+		  z-index: 1;
+		  top: -5px;
+		  right: 105%;
+		  }
+		  
+	  .tooltip2:hover .tooltiptext2 {
+		  visibility: visible;
+		  }
+		  
+					/*Top Tooltip*/
+					
+		.tooltip3 {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dashed black;
+			top: 20px;
+			}
+			
+	    .tooltip3 .tooltiptext3 {
+			visibility: hidden;
+			width: 120px;
+			background-color: beige;
+			color: navy;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			
+			/*Position the tooltip*/
+			position: absolute;
+			z-index: 1;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -60px;
+			}
+			
+		.tooltip3:hover .tooltiptext3 {
+			visibility: visible;
+			}
+			
+					/*Bottom Tooltip*/
+					
+		.tooltip4 {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px solid red;
+			}
+			
+		.tooltip4 .tooltiptext4 {
+			visibility: hidden;
+			width: 120px;
+			background-color: cornflowerblue;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			
+			/*position the tooltip*/
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 50%;
+			margin-left: -60px;
+			}
+			
+			.tooltip4:hover .tooltiptext4 {
+				visibility: visible;
+				}
+		  
+					/*Tooltip with Arrow*/
+			
+			.tooltip5 {
+				position: relative;
+				display: inline-block;
+				border-bottom: 1px dashed navy;
+				}
+				
+			.tooltip5 .tooltiptext5 {
+				visibility: hidden;
+				width: 120px;
+				background-color: navy;
+				color: beige;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				position: absolute;
+				z-index: 1;
+				bottom: 150%;
+				left: 50%;
+				margin-left: -60px;
+				}
+				
+			.tooltip5 .tooltiptext5::after {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: black transparent transparent transparent;
+				}
+				
+			.tooltip5:hover .tooltiptext5 {
+				visibility: visible;
+				}
+				
+				/*Animated Tooltip*/
+				
+		.tooltip6 {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dashed purple;
+			}
+			
+		.tooltip6 .tooltiptext6 {
+			visibility: hidden;
+			width: 120px;
+			background-color: brown;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -60px;
+			
+			/*Fade in tooltip*/
+			opacity: 0;
+			transition: opacity 2s;
+			}
+			
+		.tooltip6:hover .tooltiptext6 {
+			visibility: visible;
+			opacity: 1;
+			}
+			
+					/*Image Gallery*/
+					
+		div.img {
+			margin: 10px;
+			border: 1px solid grey;
+			float: left;
+			width: 150px;
+			}
+			
+		div.img:hover {
+			border: 1px solid black;
+			}
+			
+		div.img img {
+			width: 100%;
+			height: auto;
+			}
+			
+		div.desc {
+			padding: 10px;
+			text-align: center;
+			}
+			
+			
+					/*Responsive Image Gallery*/
+					
+		.responsive .img {
+			margin: 0;
+			border: 1px solid grey;
+			width: 100%;
+			}
+			
+		.responsive .img:hover {
+			border: 1px solid black;
+			}
+			
+		.responsive .img img {
+			width: 100%;
+			height: auto;
+			}
+			
+		.responsive .desc {
+			padding: 10px;
+			text-align: center;
+			}
+			
+		.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+			}
+			
+		@media only screen and (max-width: 700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+				}
+			}
+			
+		@media only screen and (max-width: 500px) {
+			.responsive {
+				width: 100%;
+				}
+			}
+			
+		.clearfix:after {
+			content:"";
+			display: table;
+			clear: both;
+			}
+			
+		  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Tooltips</h1>
+	
+	<h3>Right Tooltip</h3>
+	
+	<p>The following is an example of a right tooltip:</p>
+	
+	<div class="tooltip1">Hover over me!!!
+	  <span class="tooltiptext1">Text Goes Here!</span>
+	</div>
+	
+	<hr>
+	
+	<h3>Left Tooltip</h3>
+	
+	<p>The following is an example of a left tooltip:</p>
+	
+	<div class="tooltip2">Hover over me!!!
+	  <span class="tooltiptext2">Text goes here!</span>
+	</div>
+	
+	<hr>
+	
+	<h3>Top Tooltip</h3>
+	
+	<p>The following is an example of a top tooltip:</p>
+	
+	<div class="tooltip3">Hover over me!!!
+	  <span class="tooltiptext3">Text Goes Here!</span>
+	</div>
+	
+	<br>
+	<br>
+	<hr>
+	
+	<h3>Bottom Tooltip</h3>
+	
+	<p>The following is an example of a bottom tooltip:</p>
+	
+	<div class="tooltip4">Hover over me!!!
+	  <span class="tooltiptext4">Text Goes Here!</span>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<hr>
+	
+	<h3>Top Tooltip with Bottom Arrow</h3>
+	
+	<p>The following is an example of a top tooltip with a bottom arrow:</p>
+	<br>
+	<br>
+	
+	<div class="tooltip5">Hover over me!!!
+	  <span class="tooltiptext5">Text Goes Here!</span>
+	</div>
+	
+	<hr>
+	
+	<h3>Animated Tooltip</h3>
+	<br>
+	<br>
+	
+	<div class="tooltip6">Hover over me!!!
+	  <span class="tooltiptext6">Text Goes Here!</span>
+	</div>
+	
+	<hr>
+	
+	<h2>CSS Image Galler</h2>
+	
+	<p>The following is an example of an image gallery styled with CSS:</p>
+	
+	<div class="img">
+	  <a target="_blank" href="Images/river.jpg">
+		<img src="Images/river.jpg" alt="a pretty river" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	
+	<div class="img">
+	  <a target="_blank" href="Images/river2.jpg">
+		<img src="Images/river2.jpg" alt="a pretty river" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	
+	<div class="img">
+	  <a target="_blank" href="Images/rocks.jpg">
+		<img src="Images/rocks.jpg" alt="pretty rocks" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	
+	<div class="img">
+	  <a target="_blank" href="Images/rocks2.jpg">
+		<img src="Images/rocks2.jpg" alt="pretty rocks" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+	<hr>
+	
+	<h2>Responsive Image Gallery</h2>
+	
+	<p>The following is an example of a responsive image gallery:</p>
+	
+	<div class="responsive">
+	<div class="img">
+	  <a target="_blank" href="Images/river.jpg">
+		<img src="Images/river.jpg" alt="a pretty river" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="img">
+	  <a target="_blank" href="Images/river2.jpg">
+		<img src="Images/river2.jpg" alt="a pretty river" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="img">
+	  <a target="_blank" href="Images/rocks.jpg">
+		<img src="Images/rocks.jpg" alt="pretty rocks" width="150px" height="150px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="img">
+	  <a target="_blank" href="Images/rocks2.jpg">
+		<img src="Images/rocks2.jpg" alt="pretty rocks" width="300px" height="300px">
+	  </a>
+	  <div class="desc">Description of Image</div>
+	</div>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples19.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="#" class="active">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples21.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples21.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	
+	</body>
+
+</html>

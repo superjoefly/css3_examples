@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 22</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  a[target] {
+		  background-color: pink;
+		  }
+		  
+	  a[target=_blank] {
+		  background-color: powderblue;
+		  }
+		  
+	  div[title~=pro] {
+		  border: 5px solid black;
+		  }
+		  
+	  [class|=left] {
+		  background-color: yellow;
+		  }
+		  
+	  [class^="right"] {
+		  background-color: lime;
+		  }
+		  
+	  [class$="dent"] {
+		  border: 5px solid red;
+		  color: white;
+		  }
+		  
+	  [class*="se"] {
+		  background-color: purple;
+		  color: white;
+		  }
+		  
+	  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	<h1>CSS Attribute Selectors</h1>
+	
+	<h2>Select Anchor Elements with Target Attribute</h2>
+	
+	<p>The links with a pink background have a <b>target attribute:</b></p>
+	
+	<a href="#">Link 1</a>
+	
+	<a href="#" target="#">Link 2</a>
+	
+	<a href="#" target="#">Link 3</a>
+	
+	<hr>
+	
+	<h2>Select Anchor Elements with Specific Target Attribute</h2>
+	
+	<p>The links with a blue background have a <b>target attribute of "_blank":</b></p>
+	
+	<a href="#" target="_blank">Link 1</a>
+	
+	<a href="#">Link 2</a>
+	
+	<a href="#" target="_blank">Link 3</a>
+	
+	<a href="#">Link 4</a>
+	
+	<hr>
+	
+	<h2>Select Div with Title Containing Specific Word</h2>
+	
+	<p>The <b>divs that have the word "pro"</b> in the title have a black border:</p>
+	
+	<div title="pro" style="background-color: red; height: 100px; width: 100px;"></div><br>
+	
+	<div title="pre" style="background-color: blue; height: 100px; width: 100px;"></div><br>
+	
+	<div title="elephant pro" style="background-color: yellow; height: 100px; width: 100px;" ></div>
+	
+	<hr>
+	
+	<h2>Select All Elements with Class Attribute Value that Begins With Specific Word (WHOLE WORD)</h2>
+	
+	<p>The following elements that <b>have a class attribute value that begins with the word "left"</b> (has to be whole word) have a yellow background:</p>
+	
+	<p class="left">This paragraph has a class of "left".</p>
+	
+	<p class="left-handed">This paragraph has a class of "left-handed".</p>
+	
+	<p class="lefty">This paragraph has a class of "lefty".</p>
+	
+	<hr>
+	
+	<h2>Select All Elements with Class Attribute Value that Begins With Specific Word (NOT WHOLE WORD)</h2>
+	
+	<p>The following elements that <b>have a class attribute value that begins with "right"</b> (doesn't have to be whole word) have a lime background:</p>
+	
+	<p class="righty">This paragraph has a class of "righty".</p>
+	
+	<p class="right">This paragraph has a class of "right".</p>
+	
+	<p class="right-handed">This paragraph has a class of "right-handed".</p>
+	
+	
+	<hr>
+	
+	<h2>Select Elements with Class Attribute Value that Ends with Specific Word</h2>
+	
+	<p>The following elements that have <b>a class attribute value ending with the work "dent"</b> have a red border:</p>
+	
+	<div class="trident" style="background-color: blue; height: 100px; width: 100px;">I have a class of "trident".</div><br>
+	<div class="indent" style="background-color: black; height: 100px; width: 100px;">I have a class of "indent".</div><br>
+	<div class="confident" style="background-color: green; height: 100px; width: 100px;">I have a class of "confident".</div><br>
+	<div class="dented" style="background-color: yellow; height: 100px; width: 100px;">I have a class of "dented".</div>
+	
+	<hr>
+	
+	<h2>Select All Elements Containing a Specific Text</h2>
+	
+	<p>The following elements that <b>have a class attribute value containing the string "se"</b> have a purple background:</p>
+	
+	<p class="sentence">I have a class of "sentence"</p>
+	
+	<p class="scene">I have a class of "scene".</p>
+	
+	<p class="set-up">I have a class of "se-up".</p>
+	
+	<p class="se">I have a class of "se".</p>
+	
+		<hr>
+	
+	<ul class="main_pagination">
+		  <li><a href="css_examples21.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="css_examples19.html">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="#" class="active">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples23.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples23.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+	
+	</body>
+
+</html>

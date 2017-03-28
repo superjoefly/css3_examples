@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	  <title>CSS Examples 19</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+		  
+	  .dropdown1 {
+		  position: relative;
+		  display: inline-block;
+		  }
+		  
+	  .content1 {
+		  display: none;
+		  position: absolute;
+		  background-color: #b9d1f7;
+		  min-width: 170px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+		  padding: 8px 16px;
+		  }
+		  
+	  .dropdown1:hover .content1{
+		  display: block;
+		  }
+		  
+	  .button2 {
+		background-color: #77abff;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		}
+		
+     .dropdown2 {
+		 position: relative;
+		 display: inline-block;
+		 }
+		 
+     .content2 {
+		 display: none;
+		 position: absolute;
+		 background-color: #cddcf4;
+		 min-width: 170px;
+		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		 }
+		 
+	  .content2 a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: inline-block;
+		  }
+		  
+	  .content2 a:hover {
+		  background-color: #9ec3ff;
+		  }
+		  
+	  .dropdown2:hover .content2 {
+		  display: block;
+		  }
+		  
+	  .dropdown2:hover .button2 {
+		  background-color: #677489;
+		  }
+		  
+	  .button3 {
+		  background-color: #b3b8bf;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		  }
+		  
+	  .dropdown3 {
+		  position: relative;
+		  display: inline-block;
+		  float: right;
+		  }
+		  
+	  .content3 {
+		  display: none;
+		  position: absolute;
+		  right: 0;
+		  background-color: #edf3fc;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+		  }
+		  
+		.content3 a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: inline-block;
+			}
+			
+	     .content3 a:hover {
+			 background-color: #bad4ff;
+			 }
+			 
+		.dropdown3:hover .content3 {
+			display: block;
+			}
+			
+		.dropdown3:hover .button3 {
+			background-color: #3a85ff;
+			}
+	  
+		.dropdown4 {
+			position: relative;
+			display: inline-block;
+			}
+	  
+		.content4 {
+			display: none;
+			position: absolute;
+			background-color: #dbe8ff;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+			}
+			
+		.dropdown4:hover .content4 {
+			display: block;
+			}
+			
+		.desc {
+			padding: 15px;
+			text-align: center;
+			background-color: #b5d1ff;
+			font-size: 16px;
+			padding: 0 16px;
+			}
+			
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			}
+			
+		li {
+			float: left;
+			}
+			
+		li a, .button5 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+			
+		li a:hover, .dropdown5:hover .button5 {
+			background-color: red;
+			}
+			
+		li.dropdown5 {
+			display: inline-block;
+			}
+			
+		.content5 {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
+			}
+			
+		.content5 a{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			}
+			
+		.content5:hover a:hover {
+			background-color: #f1f1f1;
+			}
+			
+		.dropdown5:hover .content5 {
+			display: block;
+			}
+			
+	  
+	  
+	  </style>
+	  
+	</head>
+	
+	<body>
+	
+	<h1>CSS Dropdowns</h1>
+	
+	<h3>Hoverable Dropdowns</h3>
+	
+	<p>The following example reveals a dropdown on hover:</p>
+	
+	<div class="dropdown1">
+	  <span>Mouse over me!!!</span>
+	  <div class="content1">
+	    <p>Well, hello there!!!</p>
+	  </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<hr>
+	
+	<h3>Dropdown Menu</h3>
+	
+	<p>The following example reveals a dropdown menu on hover:</p>
+	
+	<div class="dropdown2">
+	  <button class="button2">Dropdown</button>
+	  <div class="content2">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	    <a href="#">Link 4</a>
+	  </div>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	
+	<h3>Right Aligned Dropdown Menu</h3>
+	
+	<p>The following example shows a dropdown menu that is aligned to the right:</p>
+	
+	<div class="dropdown3">
+	  <button class="button3">Right</button>
+	  <div class="content3">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	    <a href="#">Link 4</a>
+	  </div>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	
+	<h3>Dropdown Image</h3>
+	
+	<p>The following example shows a dropdown image on hover:</p>
+	
+	<div class="dropdown4">
+	  <img src="Images/bluestar.png" alt="blue star" height="50px" width="50px">
+	  <div class="content4">
+	    <img src="Images/bluestar.png" alt="blue star" height="150px" width="150px">
+	    <div class="desc">Picture of Blue Star!</div>
+	  </div>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>  
+		  
+	<h3>Dropdown Nav Bar</h3>
+	
+	<p>The following navigation bar has a dropdown menu:</p>
+	
+	<ul>
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">News</a></li>
+	  <li class="dropdown5">
+	    <a href="javascript:void(0)" class="button5">Dropdown</a>
+		  <div class="content5">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		  </div>
+	  </li>
+	</ul>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<hr>
+	
+	<ul class="main_pagination" style="background-color: white;">
+		  <li><a href="css_examples18.html">«</a></li>
+		  <li><a href="css_examples1.html">1</a></li>
+		  <li><a href="css_examples2.html">2</a></li>
+		  <li><a href="css_examples3.html">3</a></li>
+		  <li><a href="css_examples4.html">4</a></li>
+		  <li><a href="css_examples5.html">5</a></li>
+		  <li><a href="css_examples6.html">6</a></li>
+		  <li><a href="css_examples7.html">7</a></li>
+		  <li><a href="css_examples8.html">8</a></li>
+		  <li><a href="css_examples9.html">9</a></li>
+		  <li><a href="css_examples10.html">10</a></li>
+		  <li><a href="css_examples11.html">11</a></li>
+		  <li><a href="css_examples12.html">12</a></li>
+		  <li><a href="css_examples13.html">13</a></li>
+		  <li><a href="css_examples14.html">14</a></li>
+		  <li><a href="css_examples15.html">15</a></li>
+		  <li><a href="css_examples16.html">16</a></li>
+		  <li><a href="css_examples17.html">17</a></li>
+		  <li><a href="css_examples18.html">18</a></li>
+		  <li><a href="#" class="active">19</a></li>
+		  <li><a href="css_examples20.html">20</a></li>
+		  <li><a href="css_examples21.html">21</a></li>
+		  <li><a href="css_examples22.html">22</a></li>
+		  <li><a href="css_examples23.html">23</a></li>
+		  <li><a href="css_examples24.html">24</a></li>
+		  <li><a href="css_examples25.html">25</a></li>
+		  <li><a href="css_examples26.html">26</a></li>
+		  <li><a href="css_examples27.html">27</a></li>
+		  <li><a href="css_examples28.html">28</a></li>
+		  <li><a href="css_examples29.html">29</a></li>
+		  <li><a href="css_examples30.html">30</a></li>
+		  <li><a href="css_examples31.html">31</a></li>
+		  <li><a href="css_examples32.html">32</a></li>
+		  <li><a href="css_examples33.html">33</a></li>
+		  <li><a href="css_examples34.html">34</a></li>
+		  <li><a href="css_examples35.html">35</a></li>
+		  <li><a href="css_examples36.html">36</a></li>
+		  <li><a href="css_examples37.html">37</a></li>
+		  <li><a href="css_examples38.html">38</a></li>
+		  <li><a href="css_examples39.html">39</a></li>
+		  <li><a href="css_examples40.html">40</a></li>
+		  <li><a href="css_examples20.html">»</a></li>
+		</ul>
+		
+		<hr>
+	
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples20.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+		  
+		  
+</body>
+
+</html>

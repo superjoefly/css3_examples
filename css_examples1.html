@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	  <title>CSS Examples 1</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link type="text/css" rel="stylesheet" href="styles.css">
+
+	  <style>
+	  * {
+		  box-sizing: border-box;
+		  }
+
+	  body {
+		  background-color: powderblue;
+          }
+
+      div#colordiv {
+          height: 150px;
+          width: 50%;
+          background-color: yellow;
+          }
+
+      div#background-image {
+		  height: 150px;
+		  width: 50%;
+		  background-image: url("Images/background.jpg");
+		  color: white;
+		  }
+
+	  p#red {
+		  background-color: red;
+		  color: white;
+		  }
+
+	div#horizontal {
+		height: 150px;
+		width: 50%;
+		background-image: url("Images/background2.jpg");
+		background-repeat: repeat-x;
+		color: white;
+		}
+
+	div#position {
+		height: 150px;
+		width: 100%;
+		background-image: url("Images/snoopy.jpg");
+		background-repeat: no-repeat;
+		background-position: right top;
+		text-align: right;
+		}
+
+	div#fixed {
+		height: 100px;
+		width: 100%;
+		background-image: url("Images/woodstock.jpg");
+		background-attachment: fixed;
+		}
+
+	  div#shorthand {
+		  height: 150px;
+		  width: 100%;
+		  background: #e0e0e0 url("Images/snoopy3.jpg") no-repeat right bottom;
+		  background-size: 100px 75px;
+		  }
+
+	  </style>
+
+	</head>
+
+	<body>
+
+
+
+	  <h1>CSS Examples</h1>
+
+	  <h2>This is a collection of CSS Examples that I developed using <a href="http://www.w3schools.com">W3Schools.com</a>. Many of the examples I have here are very similar to the ones on their website. I did this as a learning activity and I'm posting it to exhibit some of the knowledge that I've gained throughout the learning process. Although there are some differences, the markup for these examples is available through W3Schools.</h2>
+
+	  <hr>
+
+	  <p>There are three ways to insert a style sheet:
+	    <ol>
+	      <li><strong>External Style Sheet</strong> - uses a separate document with the file name ending in .css; must be linked to the .html document; can be used to style more than one html document.</li><br>
+	      <li><strong>Internal Style Sheet</strong> - defined with the style-element inside the head-section of the HTML document; used to style a single html document.</li><br>
+	      <li><strong>Inline Styling</strong> - uses the style-attribute and applies a unique style to a single element.</li>
+	    </ol>
+	  </p>
+
+	  <p>The <strong>cascading order</strong> of the different methods of styling are as follows:</p>
+	    <ul>
+	      <li>Inline style (inside the HTML element)</li>
+	      <li>External and internal style sheets (inside the head section)</li>
+	      <li>Browser default</li>
+	    </ul>
+	  <p>An inline style has the highest priority which means that it will override a style defined inside the head tag, or in an external style sheet, or the browser's default value.</p>
+
+	  <p><strong>Note:</strong> if properties for the same selector have been defined in multiple style sheets, <strong>the value from the last read (defined) style sheet will be used</strong>. If the internal style is defined before the link to the external style sheet, then the exteranl style will be used. If the internal style is defined after the external link, then the internal style will be used.</p>
+
+	  <p><strong>The individual pages in this project will require a unique styling, therefore, for the purpose of this project I will be mostly using inline and internal css.</strong></p>
+
+	  <h1>CSS Backgrounds</h1>
+
+	  <p>The <strong>background-color</strong> of this page has been set to powderblue.</p>
+	  <hr>
+
+	  <p>The following div has a <strong>background color</strong> set to yellow:</p>
+
+	  <div id="colordiv">background-color: yellow;</div>
+	  <hr>
+
+	  <p id="red">This paragraph has a <strong>background-color</strong> set to red:</p>
+	  <hr>
+
+	  <p>The following div has a <strong>background-image</strong>:</p>
+
+	  <div id="background-image">background-image: url("image");</div>
+	  <hr>
+
+	  <p>The following div has a <strong>background-image</strong> that is <strong>only repeated horizontally</strong>:</p>
+
+	  <div id="horizontal">background-repeat: repeat-x;</div>
+	  <hr>
+
+	  <p>The following background image has been positioned on the <strong>top right</strong> side of a div using the <strong>background-position property</strong>:</p>
+
+	  <div id="position">I'm over here!!!</div>
+	  <hr>
+
+	  <p>The following div exhibits a background image that is <strong>fixed</strong> and will not scroll with the rest of the page.</p>
+
+	  <div id="fixed">I'm a fixed background image!</div>
+	  <hr>
+
+	  <p>The following example uses the <strong>background shorthand property</strong>:</p>
+
+	  <div id="shorthand"></div>
+
+	  <hr>
+
+		<ul class="main_pagination">
+			  <li><a href="#" class="active">1</a></li>
+			  <li><a href="css_examples2.html">2</a></li>
+			  <li><a href="css_examples3.html">3</a></li>
+			  <li><a href="css_examples4.html">4</a></li>
+			  <li><a href="css_examples5.html">5</a></li>
+			  <li><a href="css_examples6.html">6</a></li>
+			  <li><a href="css_examples7.html">7</a></li>
+			  <li><a href="css_examples8.html">8</a></li>
+			  <li><a href="css_examples9.html">9</a></li>
+			  <li><a href="css_examples10.html">10</a></li>
+			  <li><a href="css_examples11.html">11</a></li>
+			  <li><a href="css_examples12.html">12</a></li>
+			  <li><a href="css_examples13.html">13</a></li>
+			  <li><a href="css_examples14.html">14</a></li>
+			  <li><a href="css_examples15.html">15</a></li>
+			  <li><a href="css_examples16.html">16</a></li>
+			  <li><a href="css_examples17.html">17</a></li>
+			  <li><a href="css_examples18.html">18</a></li>
+			  <li><a href="css_examples19.html">19</a></li>
+			  <li><a href="css_examples20.html">20</a></li>
+			  <li><a href="css_examples21.html">21</a></li>
+			  <li><a href="css_examples22.html">22</a></li>
+			  <li><a href="css_examples23.html">23</a></li>
+			  <li><a href="css_examples24.html">24</a></li>
+			  <li><a href="css_examples25.html">25</a></li>
+			  <li><a href="css_examples26.html">26</a></li>
+			  <li><a href="css_examples27.html">27</a></li>
+			  <li><a href="css_examples28.html">28</a></li>
+			  <li><a href="css_examples29.html">29</a></li>
+			  <li><a href="css_examples30.html">30</a></li>
+			  <li><a href="css_examples31.html">31</a></li>
+			  <li><a href="css_examples32.html">32</a></li>
+			  <li><a href="css_examples33.html">33</a></li>
+			  <li><a href="css_examples34.html">34</a></li>
+			  <li><a href="css_examples35.html">35</a></li>
+			  <li><a href="css_examples36.html">36</a></li>
+			  <li><a href="css_examples37.html">37</a></li>
+			  <li><a href="css_examples38.html">38</a></li>
+			  <li><a href="css_examples39.html">39</a></li>
+			  <li><a href="css_examples40.html">40</a></li>
+			  <li><a href="css_examples2.html">»</a></li>
+			</ul>
+
+
+	<nav class="nava">
+	<ul>
+	<li><a href="../../../index.html">Home</a></li>
+	<li><a href="../../photography/photography.html">Photography</a></li>
+	<li><a href="../../resume/resume.html">Resume</a></li>
+	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+	<li><a class="active" href="../projects.html">Projects</a></li>
+	<li><a href="css_examples2.html">Next Page</a></li>
+	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	</ul>
+	</nav>
+
+
+
+	</body>
+
+</html>
