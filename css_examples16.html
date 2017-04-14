@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 16</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  div p {
 		  background-color: lime;
 		  }
-		  
+
 	  div#child > p {
 		  background-color: orange;
 		  }
-		  
+
 	  div#adjacent + p {
 		  background-color: blue;
 		  color: white;
@@ -27,44 +27,44 @@
 	  #container div~p {
 		  background-color: yellow;
 		  }
-		  
+
 	 p a:after {
 		  content: "(" attr(href) ")";
 		  }
-		  
+
 	  #section {
 		  counter-reset: section;
 		  }
-		  
+
 	  div#section h3 {
 		  counter-reset: subsection;
 		  }
-		  
+
 	  div#section h3:before {
 		  counter-increment: section;
 		  content: "Section " counter(section) ".";
 		  }
-		  
+
 	  div#section h4:before {
 		  counter-increment: subsection;
 		  content: counter(section) "." counter(subsection) " ";
 		  }
-		  
+
 	  q:lang(en) {
 		  quotes: "«" "»" "‹" "›";
 		  }
-	  
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS Combinators</h1>
-	
+
 	<h3>Descendant Selector</h3>
-	
+
 	<p>The following example uses the descendant selector <b>div p</b> to target 3 paragraphs in a div. The paragraphs outside the div are not styled:</p>
-	
+
 	<div>
 	  <p>Descendant of div</p>
 	  <p>Descendant of div</p>
@@ -72,86 +72,86 @@
 	</div>
 	<p>outside of div (not a descendant)</p>
 	<p>outside of div (not a descendant)</p>
-	
+
 	<hr>
-	
+
 	<h3>Child Selector</h3>
-	
+
 	<p>The following example uses the child selector <b>div > p</b> to target 2 paragraphs in a div. The remaining paragraphs are not styled:</p>
-	
+
 	<div id="child">
 	  <p>Child element</p>
 	  <p>Child element</p>
 	  <span><p>Descendant but not child.</p></span>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3>Adjacent Sibling Selector</h3>
-	
+
 	<p>The following example uses the adjacent sibling selector <b>div + p</b> to target an element that is adjacent to the div:</p>
-	
+
 	<div id="adjacent">
 	  <p>Child of div</p>
 	  <p>Child of div</p>
 	</div>
-	
+
 	<p>not in div (adjacent)</p>
 	<p>not in div (not adjacent)</p>
-	
+
 	<hr>
-	
+
 	<h3>General Sibling Selector</h3>
-	
+
 	<p>The following example uses the general sibling selector <b>div ~ p</b> to target the general siblings of the div:</p>
-	
+
 	<div id="container">
 	<div id="sibling">
 	  <p>Not a sibling</p>
 	  <p>Not a sibling</p>
 	</div>
-	
+
 	<p>General Sibling</p>
 	<p>General Sibling</p>
 	</div>
-	
+
 	<h2>CSS Generated Content</h2>
-	
+
 	<h3>Insert URL using Content Property</h3>
-	
+
 	<p>The following example uses the CSS content property to insert a URL in paraenthesis <b>after</b> the link:</p>
-	
+
 	<p><a href="http://www.bing.com">Bing!</a></p>
-	
+
 	<hr>
-	
+
 	<h3>Numbering Sections and Subsections</h3>
-	
+
 	<p>The following example uses counter increment and content to insert sections and subsections <b>before</b> the content:</p>
-	
+
 	<div id="section">
 	<h3>Main</h3>
 	<h4>Sub</h4>
 	<h4>Sub</h4>
 	<h4>Sub</h4>
-	
+
 	<h3>Main</h3>
 	<h4>Sub</h4>
 	<h4>Sub</h4>
-	
+
 	<h3>Main</h3>
 	<h4>Sub</h4>
 	<h4>Sub</h4>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3>Specify Quotes with Quotes Property in CSS</h3>
-	
+
 	<p><q>This is a <q>big</q> quote!</q></p>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples15.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -196,21 +196,21 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples17.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples17.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS3 Examples 32</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +11,26 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  #ex1 {
 		  height: 100px;
 		  width: 100px;
 		  background: red;
 		  animation: ex1 4s;
 		  }
-		  
+
 	  @keyframes ex1 {
 		  from {background: red;}
 		  to {background: blue;}
 		  }
-		  
+
 	  #ex2 {
 		  height: 100px;
 		  width: 100px;
 		  background: green;
 		  animation: ex2 4s;
 		  }
-		  
+
 	  @keyframes ex2 {
 		  0% {background: green;}
 		  25% {background: blue;}
@@ -38,7 +38,7 @@
 		  75% {background: orange;}
 		  100% {background: green;}
 		  }
-		  
+
 	  #ex3 {
 		  height: 100px;
 		  width: 100px;
@@ -46,7 +46,7 @@
 		  position: relative;
 		  animation: ex3 5s;
 		  }
-		  
+
 	  @keyframes ex3 {
 		  0% {background: orange; left: 0px; top: 0px;}
 		  25% {background: yellow; left: 200px; top: 0px;}
@@ -54,44 +54,44 @@
 		  75% {background: blue; left: 0px; top: 200px;}
 		  100% {background: orange; left: 0px; top: 0px;}
 		  }
-		  
+
 	  #ex4 {
 		  height: 100px;
 		  width: 100px;
 		  background: red;
 		  animation: ex4 5s 2s;
 		  }
-		  
+
 	  @keyframes ex4 {
 		  from {background: red;}
 		  to {background: yellow;}
 		  }
-		  
+
 	  #ex5 {
 		  height: 100px;
 		  width: 100px;
 		  background: darkseagreen;
 		  animation: ex5 3s 5s;
 		  }
-		  
+
 	  @keyframes ex5 {
 		  from {background: darkseagreen;}
 		  to {background: black;}
 		  }
-		  
+
 	  #ex6 {
 		  height: 100px;
 		  width: 100px;
 		  background: navy;
 		  animation: ex6 3s infinite;
 		  }
-		  
+
 	  @keyframes ex6 {
 		  0% {background: navy;}
 		  50% {background: pink;}
 		  100% {background: navy;}
 		  }
-		  
+
 	  #ex7 {
 		  height: 100px;
 		  width: 100px;
@@ -99,7 +99,7 @@
 		  position: relative;
 		  animation: ex7 4s 2s infinite alternate;
 		  }
-		  
+
 	  @keyframes ex7 {
 		  0% {background: yellow; top: 0px; left: 0px;}
 		  25% {background: green; top: 0px; left: 150px;}
@@ -107,49 +107,49 @@
 		  75% {background: orange; top: 150px; left: 0px;}
 		  100% {background: yellow; top: 0px; left: 0px;}
 		  }
-		  
+
 	  #ex8 {
 		  height: 100px;
 		  width: 100px;
 		  background: cornflowerblue;
 		  animation: ex8 1s ease-in 2s infinite alternate;
 		  }
-		  
+
 	  @keyframes ex8 {
 		  from {background: cornflowerblue; width: 100px;}
 		  to {background: lime; width: 300px;}
 		  }
-	  
-	  
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS3 Animations</h1>
-	
+
 	<h3>Simple Animation</h3>
-	
+
 	<p>The following animation will change back to it's original state once it has completed:</p>
-	
+
 	<div id="ex1"></div>
-	
+
 	<hr>
-	
+
 	<h3>Animation with Break Points %</h3>
-	
+
 	<p>The following animation uses break points %:</p>
-	
+
 	<div id="ex2"></div>
-	
+
 	<hr>
-	
+
 	<h3>Animation Position and Color</h3>
-	
+
 	<p>The following animation changes color and position:</p>
-	
+
 	<div id="ex3"></div>
-	
+
 	<br>
 	<br>
 	<br>
@@ -162,37 +162,37 @@
 	<br>
 	<br>
 	<hr>
-	
+
 	<h3>Animation Delay</h3>
-	
+
 	<p>The following animation has a delay of 2 seconds...refresh the page to see the dalay!</p>
-	
+
 	<div id="ex4"></div>
-	
+
 	<hr>
-	
+
 	<h3>Animation Iteration Count</h3>
-	
+
 	<p>The following animation will run 5 times before it stops:</p>
-	
+
 	<div id="ex5"></div>
-	
+
 	<hr>
-	
+
 	<h3>Animation with "infinite" Animation Iteration</h3>
-	
+
 	<p>The following animation will continue to run infinitely:</p>
-	
+
 	<div id="ex6"></div>
-	
+
 	<hr>
-	
+
 	<h3>Alternating Animation</h3>
-	
+
 	<p>The following animation alternates its pre-defined direction:</p>
-	
+
 	<div id="ex7"></div>
-	
+
 	<br>
 	<br>
 	<br>
@@ -202,11 +202,11 @@
 	<br>
 	<br>
 	<hr>
-	
+
 	<h3>Animation Timing Function</h3>
-	
+
 	<p>The following speed curves are vailable for animations:</p>
-	
+
 	<ul>
 	  <li>linear: same speed from start to end</li>
 	  <li>ease: (default) slow start, then fast, slow end</li>
@@ -220,31 +220,31 @@
 	  <li>initial: sets to default value</li>
 	  <li>inherit: inherits from parent</li>
 	</ul>
-	
+
 	<p>The following animation uses the ease-in timing function:</p>
-	
+
 	<div id="ex8"></div>
-	
+
 	<hr>
-	
+
 	<h3>Animation Shorthand Property</h3>
-	
+
 	<p>The animation shorthand property defines multiple animation properties in on declaration:</p>
-	
+
 	<pre><code>
-	animation: 
-	name 
-	duration 
+	animation:
+	name
+	duration
 	timing-function
-	delay 
-	iteration-count 
+	delay
+	iteration-count
 	direction
-	fill-mode 
+	fill-mode
 	play-state;
 	</code></pre>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples31.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -289,21 +289,21 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples33.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples33.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

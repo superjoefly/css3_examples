@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS3 Examples 38</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,68 +11,68 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		    
-	  
+
+
 	  .container {
 		  display: flex;
 		  flex-flow: row wrap;
 		  text-align: center;
 		  }
-		  
+
 	  .container > * {
 		  padding: 10px;
 		  flex:  1 100%;   /*flex-grow; flex-shrink; flex-basis;*/
 		  }
-		  
+
 	  .main {
 		  text-align: left;
 		  /*border: 1px solid green;*/
 		  background: palegreen;
 		  }
-		  
+
 	  .header {
 		 /* border: 1px solid red;*/
 		  background: paleturquoise;
 		  }
-		  
+
 	  .aside1 {
 		 /* border: 1px solid blue;*/
 		  background: palevioletred;
 		  }
-		  
+
 	  .aside2 {
 		  /*border: 1px solid orange;*/
 		  background: rosybrown;
 		  }
-		  
+
 	  .footer {
 		  /*border: 1px solid black;*/
 		  background: silver;
 		  }
-		  
+
 	  @media all and (min-width: 600px) {
             .aside { flex: 1 auto; }
           }
 
 	  @media all and (min-width: 800px) {
 			.main    { flex: 3 0px; }
-			.aside1 { order: 1; } 
+			.aside1 { order: 1; }
 			.main    { order: 2; }
 			.aside2 { order: 3; }
 			.footer  { order: 4; }
 		  }
-		  
-		  
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
-	
+
 	<h1>Responsive Web Design with Flexbox</h1>
-	
+
 	<h2>Resize the browser to see the effect:</h2>
-	
+
 	<div class="container">
 	  <header class="header">Header</header>
 	  <article class="main">
@@ -82,10 +82,10 @@
 	  <aside class="aside aside2">Aside 2</aside>
 	  <footer class="footer">Footer</footer>
 	</div>
-	
-	
-	
-	
+
+
+
+
 	<br>
 	<br>
 	<br>
@@ -98,7 +98,7 @@
 	<br>
 	<br>
 	<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples37.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -143,20 +143,22 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples39.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples39.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
+		
 	</body>
 
 </html>

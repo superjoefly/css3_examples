@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 12</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  div.fixed {
 		  height: 50px;
 		  width: 50%;
@@ -21,7 +21,7 @@
 		  position: fixed;
 		  text-align: center;
 		  }
-		  
+
 	  div.relative {
 		  height: 50px;
 		  width: 50%;
@@ -30,7 +30,7 @@
 		  right: -25%;
 		  text-align: center;
 		  }
-		  
+
 	  div.absolute {
 		  height: 50px;
 		  width: 50%;
@@ -38,7 +38,7 @@
 		  position: absolute;
 		  right: 0;
 		  }
-		  
+
 	  div.overlap {
 		  height: 75px;
 		  width: 75px;
@@ -47,26 +47,26 @@
 		  left: 0;
 		  z-index: -1;
 		  }
-	  
+
 	  #img1 {
 		  position: absolute;
 		  clip: rect(0px, 50px, 100px, 0px);
 		  }
-		  
+
 	  div.scroll {
 		  height: 100px;
 		  width: 100px;
 		  background-color: lightgrey;
 		  overflow: scroll;
 		  }
-		  
+
 	  div.hidden {
 		  height: 100px;
 		  width: 100px;
 		  background-color: cyan;
 		  overflow: hidden;
 		  }
-		  
+
 	  div.horizontal {
 		  height: 100px;
 		  width: 100px;
@@ -75,47 +75,47 @@
 		  overflow-y: hidden;
 		  white-space: nowrap;
 		  }
-	  
+
 	  div.auto {
 		  height: 100px;
 		  width: 100px;
 		  background-color: hotpink;
 		  overflow: auto;
 		  }
-		  
+
 	  img#smflower {
 		  border: 1px solid black;
 		  position: absolute;
 		  left: 0px;
 		  }
-		  
+
 	  span {
 		  font-size: 24px;
 		  }
-		  
+
 	  #container1 {
 		  height: 100px;
 		  width: 75%;
 		  position: relative;
 		  }
-		  
+
 	  #topright {
 		  position: absolute;
 		  font-size: 20px;
 		  top: 0;
 		  right: 0;
 		  }
-		  
+
 	  #pinksky {
 		  opacity: .3;
 		  }
-		  
+
 	  #container2 {
 		  height: 100px;
 		  width: 75%;
 		  position: relative;
 		  }
-		  
+
 	  #center {
 		  position: absolute;
 		  top: 50%;
@@ -123,63 +123,63 @@
 		  transform: translate (-50%, -50%);
 		  font-size: 20px;
 		  }
-		  
+
 	  #pinksky2 {
 		  opacity: .3;
 		  }
-		  
-	  
-		  
+
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS Positioning</h1>
-	
+
 	<h3>A Fixed Element</h3>
-	
+
 	<p>The following div is <b>"fixed"</b> and will stay <b>at the top/right of the screen:</b></p>
-	
+
 	<div class="fixed">This div uses fixed positioning!</div>
-	
+
 	<hr>
-	
+
 	<h3>Element Positioned Relative to Self</h3>
-	
+
 	<p>The following div is positioned <b>relative to itself</b> (position: relative;):</p>
-	
+
 	<div class="relative">This div uses relative positioning!</div>
-	
+
 	<hr>
-	
+
 	<h3>Element With Absolute Positioning</h3>
-	
+
 	<p>The following div uses <b>absolute positioning</b> and is positioned <b>relative to the page:</b></p>
-	
+
 	<div class="absolute">This div uses absolute positioning!</div>
 	<br>
 	<br>
 	<br>
 	<hr>
-	
+
 	<h3>Overlapping Elements</h3>
-	
+
 	<p>The following example shows a div with <b>overlapping text.</b> The div is "behind" the text because the div has a <b>z-index of -1:</b></p>
-	
+
 	<div class="overlap"></div>
 	<p>This is some text.</p>
 	<p>This is some text.</p>
 	<br>
-	
+
 	<hr>
-	
+
 	<h3>Set the Shape of an Element</h3>
-	
+
 	<p>The following image has been <b>clipped</b> using <b>clip: rect();</b></p>
-	
+
 	<img id="img1" src="Images/bluestar.png" alt="blue star" height="100px" width="100px">
-	
+
 	<br>
 	<br>
 	<br>
@@ -187,46 +187,46 @@
 	<br>
 	<br>
 	<hr>
-	
+
 	<h3>Manage Overflow of Content</h3>
-	
+
 	<p>The following div uses a <b>vertical and horizontal scroll bar:</b></p>
-	
+
 	<div class="scroll">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</div>
-	
+
 	<p>This div <b>hides the content:</b></p>
-	
+
 	<div class="hidden">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</div>
-	
+
 	<p>This div uses a <b>horizontal scroll bar:</b></p>
-	
+
 	<div class="horizontal">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</div>
-	
-	
+
+
 	<h3>Overflow: auto;</h3>
-	
+
 	<p>In this case, the <b>browser automatically handles the overflow of content</b> and uses a <b>vertical scroll bar:</b></p>
-	
+
 	<div class="auto">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</div>
-	
+
 	<hr>
-	
+
 	<h3>Set the Edge of Element Using Pixel Value</h3>
-	
+
 	<p>The following image uses <b>absolute positioning with a pixel setting of left: 0px;</b> (this can also be done to the top, right and bottom sides of the image):</p>
-	
+
 	<img src="Images/smflower.jpg" id="smflower" alt="small flower" height="75px" width="75px">
-	
+
 	<br>
 	<br>
 	<br>
 	<br>
 	<hr>
-	
+
 	<h3>Change Cursor on Hover</h3>
-	
+
 	<p>The following example exhibits various cursors. Hover over each word to change the cursor:</p>
-	
+
 	<span style="cursor:auto">auto</span><br>
 	<span style="cursor:crosshair">crosshair</span><br>
 	<span style="cursor:default">default</span><br>
@@ -244,27 +244,27 @@
 	<span style="cursor:text">text</span><br>
 	<span style="cursor:w-resize">w-resize</span><br>
 	<span style="cursor:wait">wait</span><br>
-	
+
 	<hr>
-	
+
 	<h3>Position Image Text</h3>
-	
+
 	<p>The following example has the <b>image text positioned to the top-right corner.</b> (This can also be done for <b>top-left corner, bottom-right corner, bottom-left corner and center!)</b></p>
-	
+
 	<p>Positioned to top-right:</p>
 	<div id="container1">
 	  <img src="Images/pinksky.jpg" id="pinksky" height="100px" width="100%" alt="pink sky">
 	  <div id="topright">Top Right</div>
 	</div>
-	
+
 	<p>Positioned to center:</p>
 	<div id="container2">
 	<img src="Images/pinksky.jpg" id="pinksky2" alt="pink sky" height="100px" width="100%">
 	<div id="center">Centered</div>
 	</div>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples11.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -309,21 +309,21 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples13.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples13.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

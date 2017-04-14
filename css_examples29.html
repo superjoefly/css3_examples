@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS3 Examples 29</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  #clipped {
 		  width: 200px;
 		  border: 1px solid blue;
@@ -19,7 +19,7 @@
 		  overflow: hidden;
 		  text-overflow: clip;
 		  }
-		  
+
 	  #ellipsis {
 		  width: 200px;
 		  border: 1px solid red;
@@ -27,91 +27,91 @@
 		  overflow: hidden;
 		  text-overflow: ellipsis;
 		  }
-		  
+
 	  #hover {
 		  width: 200px;
 		  border: 1px solid green;
 		  white-space: nowrap;
 		  overflow: hidden;
 		  }
-		  
+
 	  #hover:hover {
 		  overflow: visible;
 		  }
-		  
+
 	  #break {
 		  width: 200px;
 		  border: 1px solid orange;
 		  word-wrap: break-word;
 		  }
-		  
+
 	  #hyphens {
 		  width: 150px;
 		  border: 1px solid brown;
 		  word-break: keep-all;
 		  }
-	  
+
 	  #any {
 		  width: 150px;
 		  border: 1px solid black;
 		  word-break: break-all;
 		  }
-		  
+
 	  @font-face {
 		  font-family: myFont;
 		  src: url(fonts/frozdotre.ttf);
 		  }
-		  
+
 	  #font {
 		  font-family: myFont;
 		  transform: scale(1,1.5);
 		  color: maroon;
 		  }
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS3 Text</h1>
-	
+
 	<h3>Clipped Text Overflow:</h3>
-	
+
 	<p id="clipped">This is some long text that will be clipped.This is some long text that will be clipped.</p>
-	
+
 	<hr>
-	
+
 	<h3>Ellipsis Overflow:</h3>
-	
+
 	<p id="ellipsis">This is some long text that will be clipped.This is some long text that will be clipped.</p>
-	
+
 	<hr>
-	
+
 	<h3>Show Overflow on Hover:</h3>
-	
+
 	<p id="hover">This is some long text that will be clipped.This is some long text that will be clipped.</p>
-	
+
 	<hr>
-	
+
 	<h3>Allow Word Breaking:</h3>
-	
+
 	<p id="break">This is some long text that will be clipped.This is some looooooooooooooooooooooooooooooooooong text that will be clipped.</p>
-	
+
 	<hr>
-	
+
 	<h3>Specify Line Breaking Rules:</h3>
-	
+
 	<p id="hyphens">This paragraph conains some text. This line will-break-at-hyphens...</p>
-	
+
 	<p id="any">This paragraph contains some text. This line will break at any character...</p>
-	
+
 	<h2>CSS3 Fonts</h2>
-	
+
 	<p id="font">With <strong>CSS3</strong>, websites can use fonts other than the pre-selected "web-safe" fonts!</p>
-	
+
 	<p><strong>If the font has a bold format, enter it the same way and wrap the word with bold tags.</strong></p>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples28.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -156,21 +156,21 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples30.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples30.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS3 Examples 39</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +11,38 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  body {
 		  background-color: beige;
 		  color: brown;
 		  }
-		  
+
 	  @media all and (min-width: 800px) {
 		  body {
 			  background-color: brown;
 			  color: beige;
 			  }
 		  }
-		  
-		  
+
+
 	  .wrapper {
 		  overflow: auto;
 		  }
-		  
+
 	  #main {
 		  margin-left: 4px;
 		  }
-		  
+
 	  #leftsidebar {
 		  float: none;
 		  width: auto;
 		  }
-		  
+
 	  #menu {
 		  margin: 0;
 		  padding: 0;
 		  }
-		  
+
 	  .item {
 		  background-color: darkseagreen;
 		  color: white;
@@ -52,7 +52,7 @@
 		  margin: 4px;
 		  padding: 2px;
 		  }
-		  
+
 	  @media all and (min-width: 600px) {
 		  #leftsidebar {
 			  width: 200px;
@@ -63,18 +63,18 @@
 			  }
 		  }
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS3 Media Queries</h1>
-	
+
 	<h3>Change background-color and text-color:</h3>
-	
+
 	<p>The following example uses a media query to change the background and text color of the viewport at 800px:</p>
-	
+
 	<p><strong>Resize the browser window to see the effect:</strong></p>
-	
+
 	<pre><code>
 	@media all and (min-width: 800px) {
 		body {background-color: brown;
@@ -82,15 +82,15 @@
 		}
 	}
 	</code></pre>
-	
+
 	<hr>
-	
+
 	<h3>Float menu bar to the left:</h3>
-	
+
 	<p>On a smaller screen, the menu items will be on top of the content; on a larger screen, they will be to the left of the content.</p>
-	
+
 	<p><strong>Resize the browser window to see the effect:</strong></p>
-	
+
 	<pre><code>
 	@media all and (min-width: 600px) {
 		  #leftsidebar {
@@ -102,7 +102,7 @@
 			  }
 		  }
 	</code></pre>
-	
+
 	<div class="wrapper">
 	  <div id="leftsidebar">
 	    <ul id="menu">
@@ -113,21 +113,21 @@
 	      <li class="item">Menu Item 5</li>
 	    </ul>
 	  </div>
-	  
+
 	  <div id="main">
 	    <h1>This is a heading!</h1>
 	    <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
 	  </div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples38.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -172,22 +172,22 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples40.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples40.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

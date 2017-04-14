@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 17</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,212 +11,212 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  a:link {
 		  color: red;
 		  }
-		  
+
 	  a:visited {
 		  color: pink;
 		  }
-		  
+
 	  a:hover {
 		  color: blue;
 		  }
-		  
+
 	  a:active {
 		  color: yellow;
 		  }
-		  
+
 	  a.fontsize:hover {
 		  font-size: 30px;
 		  }
-		  
+
 	  a.background:hover {
 		  background-color: lime;
 		  }
-		  
+
 	  a.fontfamily:hover {
 		  font-family: cursive;
 		  }
-		  
+
 	  a.decoration {
 		  text-decoration: none;
 		  }
-		 
+
 	  a.decoration:hover {
 		  text-decoration: underline;
 		  }
-		  
+
 	  input:focus {
 		  background-color: lime;
 		  }
-		  
+
 	  #firstchild p:first-child {
 		  background-color: red;
 		  color: white;
 		  }
-		  
+
 	  #ielement p i:first-child {
 		  color: blue;
 		  font-size: 20px;
 		  }
-		  
+
 	  #ielement2 p:first-child i {
 		  color: red;
 		  font-size: 20px;
 		  }
-		  
+
 	  q:lang(no) {
 		  quotes: "~" "~";
 		  }
-		  
+
 	  p#firstletter::first-letter {
 		  color: blue;
 		  font-size: 30px;
 		  }
-		  
+
 	  p#firstline::first-line {
 		  color: red;
 		  font-size: 30px;
 		  }
-		  
+
 	  p#letterline::first-letter {
 		  color: blue;
 		  font-size: 30px;
 		  }
-	  
+
 	  p#letterline::first-line {
 		  color: orange;
 		  font-variant: small-caps;
 		  }
-		  
+
 	  h4#before::before {
 		  content: url(Images/smflower.jpg);
 		  }
-	  
+
 	  h4#after::after {
 		  content: url(Images/smflower.jpg);
 		  }
-		  
-	
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS Pseudo-Classes</h1>
-	
+
 	<h3>Styling Hyperlinks</h3>
-	
+
 	<p>The following is an example of a <b>styled hyperlink</b>...it has different colors for link, visited, hover and active:</p>
-	
+
 	<a href="http://superfly.tk">Superfly Blog</a>
-	
+
 	<hr>
-	
+
 	<h3>Other Styles for Hyperlinks</h3>
-	
+
 	<p>The following hyperlinks have <b>various styles</b> including font-size, background-color, font-family and text-decoration:</p>
-	
-	
+
+
 	<a class="fontsize" href="http://superfly.tk">This link changes font-size on hover</a><br><br>
 	<a class="background" href="http://superfly.tk">This link changes background-color on hover</a><br><br>
 	<a class="fontfamily" href="http://superfly.tk">This link changes font-family on hover</a><br><br>
 	<a class="decoration" href="http://superfly.tk">This link changes text-decoration (underline) on hover</a>
-	
+
 	<hr>
-	
+
 	<h3>Add Focus to an Element</h3>
-	
+
 	<p>The following example adds a <b>background-color</b> to to an <b>input field under focus.</b> Click on an input field to see the effect:</p>
-	
+
 	<form action="" method="get">
 	  First Name: <input type="text" name="fname"><br><br>
 	  Last Name: <input type="text" name="lname"><br><br>
 	  <input type="submit" value="Submit">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Target the First Child of an Element</h3>
-	
+
 	<p>The following example targets the <b>first-child</b> of an element:</p>
-	
+
 	<div id="firstchild">
 	<p>This is some text.</p>
 	<p>This is some text.</p>
 	<p>This is some text.</p>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3>Target the First I-Element in Each P-Element</h3>
-	
+
 	<p>The following example <b>targets the first italic element in each paragraph:</b></p>
-	
+
 	<div id="ielement">
 	  <p><i>I am awesome!</i> I am awesome! I am awesome!</p>
 	  <p>I am awesome! <i>I am awesome!</i> I am awesome!</p>
 	  <p>I am awesome! I am awesome! <i>I am awesome!</i></p>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3>Target the First I-Element in All First Child P-Elements</h3>
-	
+
 	<p>The following example <b>targets the first italic element</b> in the <b>first-child of each paragraph:</b></p>
-	
+
 	<div id="ielement2">
 	  <p><i>I am awesome!</i> I am awesome! I am awesome!</p>
 	  <p>I am awesome! <i>I am awesome!</i> I am awesome!</p>
 	  <p>I am awesome! I am awesome! <i>I am awesome!</i></p>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3>Use of :lang</h3>
-	
+
 	<p>In the following example <b>:lang</b> is used to define the quotation marks for <b>q-elements with lang="no":</b></p>
-	
+
 	<p>Some text <q lang="no">A quote in a paragraph</q> Some more text...</p>
-	
+
 	<h1>CSS Pseudo-elements</h1>
-	
+
 	<h3>Make the first letter in paragraph SPECIAL (minimize window to see effect if necessary)</h3>
-	
+
 	<p id="firstletter">This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</p>
-	
+
 	<hr>
-	
+
 	<h3>Make the first line of paragraph Special</h3>
-	
+
 	<p id="firstline">This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!</p>
-	
+
 	<hr>
-	
+
 	<h3>Make the first letter and first line SPECIAL</h3>
-	
+
 	<p id="letterline">This is some text!This is some text!This is some text!This is some text!This is some text!This is some text!</p>
-	
+
 	<hr>
-	
+
 	<h3>Insert Content Before Element</h3>
-	
+
 	<p>The following example inserts content <b>before the element:</b></p>
-	
+
 	<h4 id="before">This is a heading! This is a heading! This is a heading!</h4>
-	
+
 	<hr>
-	
+
 	<h3>Insert Content After Element</h3>
-	
+
 	<p>The following example inserts content <b>after the element:</b></p>
-	
+
 	<h4 id="after">This is a heading! This is a heading! This is a heading!</h4>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples16.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -261,22 +261,22 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples18.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples18.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
-	
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
+
 	</body>
 
 </html>

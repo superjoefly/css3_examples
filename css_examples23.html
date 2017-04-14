@@ -2,28 +2,28 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 23</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  
+
 	  <link type="text/css" rel="stylesheet" href="styles.css">
-	  
+
 	  <style>
 	  * {
 		  box-sizing: border-box;
 	  }
-	  
+
 	  #width #fname {
 		  width: 100%;
 		  }
-		  
+
 	  #fname2, #lname2 {
 		  width: 100%;
 		  padding: 12px 20px;
 		  margin: 8px 0;
 		  }
-		  
+
 	  #border input[type=text] {
 		  width: 100%;
 		  padding: 12px 20px;
@@ -31,7 +31,7 @@
 		  border: 2px inset red;
 		  border-radius: 5px;
 		  }
-		  
+
 	  #bottom input[type=text] {
 		  width: 100%;
 		  padding: 12px 20px;
@@ -39,7 +39,7 @@
 		  border: none;
 		  border-bottom: 2px solid blue;
 		  }
-		  
+
 	  #color input[type=text] {
 		  width: 75%;
 		  padding: 12px 20px;
@@ -48,7 +48,7 @@
 		  border: none;
 		  outline: none;
 		  }
-		  
+
 	  #focus input[type=text] {
 		  width: 75%;
 		  padding: 12px 20px;
@@ -56,25 +56,25 @@
 		  border: 1px solid grey;
 		  outline: none;
 		  }
-		  
+
 	  #focus input[type=text]:focus {
 		  background-color: #e8e8e8;
 		  border: none;
 		  }
-		  
+
 	  #fborder input[type=text] {
 		  width: 75%;
 		  padding: 12px 20px;
 		  margin: 8px 0;
 		  border: 3px solid lightgrey;
 		  transition: .5s;
-		  outline: none; 
+		  outline: none;
 		  }
-		  
+
 	  #fborder input[type="text"]:focus {
 		  border: 3px solid black;
 		  }
-		  
+
 	  #icon input[type=text] {
 		  width: 75%;
 		  border: 2px solid #c4dafc;
@@ -87,7 +87,7 @@
 		  background-repeat: no-repeat;
 		  padding: 12px 20px 12px 40px;
 		  }
-		  
+
 	  #ani input[type=text] {
 		  width: 25%;
 		  border: 2px solid navy;
@@ -101,11 +101,11 @@
 		  padding: 12px 20px 12px 40px;
 		  transition: width .5s ease-in-out;
 		  }
-		  
+
 	  #ani input[type=text]:focus {
 		  width: 100%;
 		  }
-		  
+
 	  #stytxt textarea {
 		  width: 75%;
 		  height: 150px;
@@ -117,7 +117,7 @@
 		  resize: none;
 		  color: red;
 		  }
-		  
+
 	  #select #color {
 		  width: 75%;
 		  padding: 16px 20px;
@@ -128,7 +128,7 @@
 		  background-color: #ffbcbc;
 		  color: navy;
 		  }
-		  
+
 	  input[type=button] {
 		  background-color: cornflowerblue;
 		  border: none;
@@ -140,7 +140,7 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		  }
-	  
+
 	  input[type=reset] {
 		  background-color: beige;
 		  border: none;
@@ -152,7 +152,7 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		  }
-	  
+
 	  input[type=submit] {
 		  background-color: hotpink;
 		  border: none;
@@ -164,121 +164,121 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		  }
-		  
+
 	  input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
 		  border: 2px solid black;
 		  box-shadow: 2px 2px 4px grey;
 		  }
-		  
-		  
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS Forms</h1>
-	
+
 	<h3>Full Width Input Field</h3>
-	
+
 	<form id="width">
 	  <label for="fname">First Name</label>
 	  <input type="text" id="fname" name="fname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Fields with Padding</h3>
-	
+
 	<form>
 	 <label for="fname">First Name</label>
 	 <input type="text" id="fname2" name="fname">
 	 <label for="lname">Last Name</label>
 	 <input type="lname" id="lname2" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Field with Styled Borders</h3>
-	
+
 	<form id="border">
 	  <label for="fname">First Name</label>
 	  <input type="text" id="fname" name="fname">
 	  <label for="lname">Last Name</label>
 	  <input type="text" id="lname" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Field with Bottom Border</h3>
-	
+
 	<form id="bottom">
 	<label for="fname">First Name</label>
 	<input type="text" id="fname" name="fname">
 	<label for="fname">Last Name</label>
 	<input type="text" id="lname" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Colord Input Fields</h3>
-	
+
 	<form id="color">
 	  <label for="fname">First Name</label>
 	  <input type="text" id="fname" name="fname"><br>
 	  <label for="lname">Last Name</label>
 	  <input type="text" id="lname" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Field with Focus</h3>
-	
+
 	<form id="focus">
 	  <label for="fname">First Name</label>
 	  <input type="text" id="fname" name="fname"><br>
 	  <label for="lname">Last Name</label>
 	  <input type="text" id="lname" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Field with Focus</h3>
-	
+
 	<form id="fborder">
 	  <label for="fname">First Name</label>
 	  <input type="text" id="fname" name="fname"><br>
 	  <label for="lname">Last Name</label>
 	  <input type="text" id="lname" name="lname">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Input Field with Icon Image</h3>
-	
+
 	<form id="icon">
 	  <input type="text" name="search" placeholder="Search..">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Animated Input Search Input</h3>
-	
+
 	<form id="ani">
 	  <input type="text" name="search" placeholder="Search..">
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Styled Text Area</h3>
-	
+
 	<form id="stytxt">
 	  <textarea>This is some text...</textarea>
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Styled Select Menu</h3>
-	
+
 	<form id="select">
 	  <select id="color" name="color">
 	    <option value="red">Red</option>
@@ -286,19 +286,19 @@
 	    <option value="blue">Blue</option>
 	  </select>
 	</form>
-	
+
 	<hr>
-	
+
 	<h3>Styled Input Buttons</h3>
-	
+
 	<input type="button" value="Button">
-	
+
 	<input type="reset" value="Reset">
-	
+
 	<input type="submit" value="Submit">
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples22.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -343,23 +343,23 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples24.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples24.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
+
+
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
 	</body>
 
 </html>

@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 11</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +11,33 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  #hidden {
 		  visibility: hidden;
 		  }
-		  
+
 	  #hidden2 {
 		  display: none;
 		  }
-		  
+
       #inline1 {
 		  height: 100px;
 		  width: 25%;
 		  border: 2px solid blue;
 		  display: inline-block;
 		  }
-		  
+
 	  #inline2 {
 		  height: 100px;
 		  width: 25%;
 		  border: 2px solid red;
 		  display: inline-block;
 		  }
-		  
+
 	  span {
 		  display: block;
 		  }
-		  
+
       #panel, #flip {
 		  font-size: 20px;
 		  padding: 10px;
@@ -47,11 +47,11 @@
 		  margin: auto;
 		  width: 75%;
 		  }
-		  
+
 	  #panel {
 		  display: none;
 		  }
-		  
+
 	  textarea {
 			  width: 100%;
 			  height: 150px;
@@ -59,65 +59,65 @@
 			  overflow-wrap: normal;
 			  overflow-x: scroll;
 	  }
-		  
-	  
+
+
 	  </style>
-	  
+
 	</head>
-	
+
 	<body>
 	<h1>CSS Display</h1>
-	
+
 	<h3>Hiding an Element</h3>
-	
+
 	<p>The following element has a setting of <b>visibility: hidden;</b></p>
-	
+
 	<h1 id="hidden">This is a hidden (visibility: hidden;) heading!</h1>
-	
+
 	<p><strong>Note:</strong> an element hidden with <b>visibility: hidden;</b> still takes up space!</p>
-	
+
 	<hr>
-	
+
 	<p>The following element has a setting of <b>display: none;</b></p>
-	
+
 	<h1 id="hidden2">This is a hidden (display: none;) heading!</h1>
-	
+
 	<p><strong>Note:</strong> an element hidden with <b>display: none;</b> does NOT take up any space!</p>
-	
+
 	<hr>
-	
+
 	<h3>Display a Block Level Element as Inline (display: inline-block;)</h3>
-	
+
 	<p>The following elements sre block level elements displayed as an inline elements <b>(display: inline-block;)</b></p>
-	
+
 	<div id="inline1"></div>
-	
+
 	<div id="inline2"></div>
-	
+
 	<hr>
-	
+
 	<h3>Display a Inline Level Element as Block (display: block;)</h3>
-	
+
 	<p>The following two inline (span) elements are displayed as block level element <b>(display: block;)</b></p>
-	
+
 	<span>A display property with a value of "block" results in</span> <span>a line break between two inline elements elements.</span>
-	
+
 	<hr>
-	
+
 	<h3>Show Hidden Content using CSS and JavaScript</h3>
-	
+
 	<p>The following example uses <b>CSS and JavaScript</b> to hide, and then reveal, hidden content:</p>
-	
+
 	<p id="flip" onclick="myFunction()">Click here to show hidden content!</p>
-	
+
 	<div id="panel">
 	  <p>This example uses <b>CSS and JavaScript</b> to show hidden content. It is styled with CSS and we use JavaScript to show it (display: block). The code is as follows:</p>
-	  
+
 	  <textarea>
 	  <p id="flip" onclick="myFunction()">Click here to show hidden content!</p>
-	  
+
 	  <div id="panel">text text text...</div>
-	  
+
 	  <script>
 	function myFunction() {
 		document.getElementById("panel").style.display = "block";
@@ -125,15 +125,15 @@
 	</script>
 	  </textarea>
 	</div>
-	
+
 	<script>
 	function myFunction() {
 		document.getElementById("panel").style.display = "block";
 		}
 	</script>
-	
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples10.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -178,24 +178,24 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples12.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-	
-	
-	<nav class="nava">
-	<ul>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
-	<li><a href="../../resume/resume.html">Resume</a></li>
-	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
-	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples12.html">Next Page</a></li>
-	<li style="float: right"><a href="../../about/about.html">About</a></li>
-	</ul>
-	</nav>
-	
-	
-	
+
+
+		<nav class="nava">
+		<ul>
+		<li><a href="../../../index.html">Home</a></li>
+		<li><a href="../../resume/resume.html">Resume</a></li>
+		<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+		<li><a class="active" href="../projects.html">Projects</a></li>
+		<li style="float: right"><a href="../../about/about.html">About</a></li>
+		<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+		<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
+		</ul>
+		</nav>
+
+
+
 	</body>
 
 </html>

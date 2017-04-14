@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		
+
 	  <title>CSS Examples 15</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +11,31 @@
 	  * {
 		  box-sizing: border-box;
 		  }
-		  
+
 	  body {
 		  margin: 0;
 		  padding: 0;
 		  }
-		  
+
 	  .test1 {
 		  height: 100px;
 		  width: 200px;
 		  border: 2px solid red;
 		  margin: auto;
 		  }
-		  
+
 	  .test2 {
 		  height: 100px;
 		  width: 200px;
 		  border: 2px solid blue;
 		  text-align: center;
 		  }
-		  
+
 	  .test3 {
 		  display: block;
 		  margin: 0 auto;
 		  }
-		  
+
 	  .test4  {
 		  width: 200px;
 		  height: 100px;
@@ -43,12 +43,12 @@
 		  position: absolute;
 		  right: 0px;
 		  }
-		  
+
 	  .container {
 		  position: relative;
 		  width: 100%;
 		  }
-		  
+
 	  .test5 {
 		  width: 200px;
 		  height: 100px;
@@ -56,32 +56,32 @@
 		  position: absolute;
 		  right: 0px;
 		  }
-		  
+
 	  .test6 {
 		  width: 200px;
 		  height: 100px;
 		  border: 2px solid black;
 		  float: right;
 		  }
-		  
+
 	  #clearfix {
 		  clear: both;
 		  }
-		  
+
 	  .test7 {
 		  width: 200px;
 		  height: 100px;
 		  float: right;
 		  border: 2px solid blue;
 		  }
-		  
+
 	  .test8 {
 		  width: 200px;
 		  height: 100px;
 		  border: 2px solid red;
 		  padding: 50px 0px;
 		  }
-		  
+
 	  .test9 {
 		  width: 300px;
 		  height: 100px;
@@ -89,7 +89,7 @@
 		  text-align: center;
 		  padding: 50px 0;
 		  }
-		  
+
 	  .test10 {
 		  width: 50%;
 		  height: 100px;
@@ -97,60 +97,60 @@
 		  line-height: 50px;
 		  text-align: center;
 		  }
-		  
+
 	  .test10 p {
 		  display: inline-block;
 		  vertical-align: middle;
 		  }
-		  
+
 	  .test11 {
 		  width: 200px;
 		  height: 200px;
 		  border: 2px solid green;
 		  position: relative;
 		  }
-		  
+
 	  .test11 p {
 		  position: absolute;
 		  top: 50%;
 		  left: 50%;
 		  transform: translate(-50%, -50%);
 		  }
-		  
+
 	  </style>
 	</head>
-	
+
 	<body>
 	<h1>CSS Aligning Elements</h1>
-	
+
 	<h3>Center Div</h3>
-	
+
 	<p>The following following example uses <b>margin:auto;</b> to center the div:</p>
-	
+
 	<div class="test1">margin: auto;</div>
-	
+
 	<hr>
-	
+
 	<h3>Center Text Within a Div</h3>
-	
+
 	<p>The following example uses <b>text-align: center;</b> to center the text inside the div:</p>
-	
+
 	<div class="test2">text-align: center;</div>
-	
+
 	<hr>
-	
+
 	<h3>Center an Image</h3>
-	
+
 	<p>The following example uses <b>display: block;</b> and <b>margin: 0 auto;</b> to center the image:</p>
-	
+
 	<img class="test3" src="Images/snow1.jpg" alt="picture of snow" height="auto" width="150px">
-	
+
 	<hr>
-	
+
 	<h3>Align a Div with Position Property</h3>
-	
+
 	<p>The following example uses the <b>position property</b> to right align the div:</p>
-	
+
 	<div class="test4">position: absolute; <br> right: 0px</div>
 	<br>
 	<br>
@@ -158,80 +158,80 @@
 	<br>
 	<br>
 	<br>
-	
+
 	<hr>
-	
+
 	<h3>Position: Cross Browser Solution (container)</h3>
-	
+
 	<p>The following example uses a "container" to provide a <b>cross browser solution</b> for positioning the div:</p>
-	
+
 	<div class="container">
 	  <div class="test5">Cross Browser Positioning: uses 0px margin and 0px padding for the body selector!</div>
 	</div>
-	
+
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
-	
+
 	<hr>
-	
+
 	<h3>Right Align with Float</h3>
-	
+
 	<p>The following example right-aligns a div using the <b>float property:</b></p>
-	
+
 	<div class="test6">float: right;</div>
-	
+
 	<div id="clearfix"></div>
-	
+
 	<hr>
-	
+
 	<h3>Float: Cross Browser Solution</h3>
-	
+
 	<div class="test7">Cross Browser Float: uses 0px margin and 0px padding for the body selector!</div>
-	
+
 	<div id="clearfix"></div>
-	
+
 	<hr>
-	
+
 	<h3>Vertical Center</h3>
-	
+
 	<p>The following example centers the content vertically using <b>padding:</b></p>
-	
+
 	<div class="test8">Vertical Center</div>
-	
+
 	<hr>
-	
+
 	<h3>Vertical and Horizontal Center</h3>
-	
+
 	<p>The following example uses <b>padding and text-align</b> to center the content:</p>
-	
+
 	<div class="test9">Vertical and Horizontal Center</div>
-	
+
 	<hr>
-	
+
 	<h3>Vertical Center Using Line Height</h3>
-	
+
 	<p>The following example uses <p>line-height</p> to vertically center the content:</p>
-	
+
 	<div class="test10"><p>vertical center using line-height</p></div>
-	
+
 	<hr>
-	
+
 	<h3>Center Using Positioning</h3>
-	
+
 	<p>The following example uses <p>transform and positioning</p> to center content:</p>
-	
+
 	<div class="test11">
 	  <p>Centered Using Position Property</p>
 	</div>
-	
-	
-	
+
+
+
 		<hr>
-	
+
 	<ul class="main_pagination">
 		  <li><a href="css_examples14.html">«</a></li>
 		  <li><a href="css_examples1.html">1</a></li>
@@ -276,24 +276,24 @@
 		  <li><a href="css_examples40.html">40</a></li>
 		  <li><a href="css_examples16.html">»</a></li>
 		</ul>
-		
+
 		<hr>
-		
+
 	<br>
 	<br>
-	
+
 	<nav class="nava">
 	<ul>
 	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../photography/photography.html">Photography</a></li>
 	<li><a href="../../resume/resume.html">Resume</a></li>
 	<li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
 	<li><a class="active" href="../projects.html">Projects</a></li>
-	<li><a href="css_examples16.html">Next Page</a></li>
 	<li style="float: right"><a href="../../about/about.html">About</a></li>
+	<!-- <li><a href="css_examples2.html">Next Page</a></li> -->
+	<!-- <li><a href="../../photography/photography.html">Photography</a></li> -->
 	</ul>
 	</nav>
-	
+
 	</body>
 
 </html>
